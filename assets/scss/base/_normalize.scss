@@ -1,0 +1,77 @@
+*::after {
+    box-sizing: border-box;
+}
+
+/*Убираем внутренние отступы слева тегам списка у которых есть атрибуты class*/
+
+:where(ul, ol):where([class]) {
+    padding-left: 0;
+}
+
+body,
+:where(blockquote, figure):where([class]) {
+    margin: 0;
+}
+
+:where(ul, ol, dl, h1, h2, h3, h4, h5, h6, p):where([class]) {
+    margin-block: 0;
+}
+
+:where(dd[class]) {
+    margin-left: 0;
+}
+
+:where(ul[class]) {
+    list-style: none;
+}
+a:where([class]) {
+    display: inline-flex;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Наследуем свойства шрифт для полей ввода*/
+
+input, textarea, select, button {
+    font: inherit;
+}
+
+html {
+    height: 100%;
+
+    /*Плавный скрол*/
+
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+}
+
+body {
+    min-height: 100%;
+
+    line-height: 1.5;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/*Удаляем всу анимации и переходы для людей, которые предпочитают их не использовать*/
+
+@media(prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

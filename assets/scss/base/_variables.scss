@@ -1,0 +1,34 @@
+@use '../helpers/index' as *;
+
+:root {
+    --color-light: #FFFFFF;
+    --color-black: #080808;
+    --color-dark: #1D1D1D;
+    --color-grey: #FFFFFF99;
+    --color-grey-dark: #E7E7E733;
+
+    --color-accent: #FF743F;
+    --color-red: #ff5500;
+
+    --gradient: linear-gradient(45deg, var(--color-dark-15) 64%, var(--color-accent) 136%);
+
+    --border: #{rem(1)} solid var(--color-light);
+    --border-alt: #{rem(1)} solid var(--color-dark);
+    --border-radius: #{rem(50)};
+
+    --shadow: 0 0 0 #{rem(3)} #191919;
+
+    --font-family-base: 'Noto-Sans-SemiBolt', sans-serif ;
+    --font-family-h: 'Noto-Sans-Medium', sans-serif ;
+    --font-family-h-2: 'Noto-Sans-Regular', sans-serif ;
+
+    --container-width: #{rem(1880)};
+    --container-padding-x: #{rem(20)};
+    --transition-duration: 0.2s ;
+
+    @include laptop {
+        --container-width: #{rem(1400)};
+    }
+
+
+}

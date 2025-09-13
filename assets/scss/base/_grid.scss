@@ -1,0 +1,63 @@
+@use '../helpers' as *;
+.grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    align-items: stretch;
+
+    &--template-2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(20);
+
+        @include tablet {
+            
+            max-width: rem(800);
+            
+        }
+
+        @include mobile {
+            max-width: rem(500);
+            grid-template-columns: 1fr;
+            margin-inline: rem(80);
+        }
+    }
+
+    &--template-3 {
+        grid-template-columns: repeat(3, 1fr);
+        
+        gap: rem(10);
+        
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: rem(800);
+
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+            max-width: rem(500);
+            margin-inline: rem(80);
+            
+        }
+    }
+
+    &--template-4 {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: fluid(60, 40);
+
+        @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+            max-width: rem(500);
+            
+        }
+    }
+
+    &--template-columns-2-rows-2 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+    }
+}

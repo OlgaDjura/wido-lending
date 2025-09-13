@@ -1,0 +1,75 @@
+@use '../helpers' as *;
+.city-dropdown {
+    position: relative;
+    display: inline-block;
+    padding: rem(20);
+}
+
+.city-dropdown__button {
+    text-align: center;
+    padding: rem(24) rem(40);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: transparent;
+    color: var(--color-light);
+    cursor: pointer;
+    font-size: fluid(18, 16);
+    font-weight: 600;
+}
+
+.city-dropdown__menu {
+    position: absolute;
+    top: 110%;
+    left: rem(-350);
+    width: rem(540);
+    height: rem(656);
+    border-radius: 32px;
+    box-shadow: inset 0px 4px 80px 0px rgba(0, 0, 0, 0.25);
+    background: var(--color-dark);
+    display: none; /* по умолчанию скрыто */
+    z-index: 20;
+    padding: rem(20);
+
+}
+
+.city-dropdown__menu.show {
+    display: block;
+}
+
+.city-dropdown__label {
+    display: block;
+    margin-bottom: rem(20);
+}
+.city-dropdown__input {
+    width: 80%;
+    padding: rem(24) rem(32);
+    align-items: center;
+    background-color: var(--color-black);
+    border-radius: var(--border-radius);
+    border: none;
+    
+
+    &::placeholder {
+        font-size: fluid(22, 20);
+        color: var(--color-light);
+    }
+}
+
+.city-dropdown__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.city-dropdown__list li {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: var(--color-light);
+}
+
+.city-dropdown__list li:hover {
+  background: #f0f0f0;
+}

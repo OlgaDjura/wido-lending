@@ -1,0 +1,98 @@
+@use '../helpers' as *;
+
+.task {
+    &__item {
+        position: relative;
+        border-radius: rem(32);
+        box-sizing: border-box;
+        background-color: var(--color-dark);
+    &--img {
+        border-top-left-radius: rem(32);
+        border-top-right-radius: rem(32);
+        overflow: hidden;
+        background-image: linear-gradient(180.00deg, rgba(29, 29, 29, 0) 46%,rgba(29, 29, 29, 1) 100%);
+        width: 100%;
+        
+    }
+
+    &--button {
+            position: absolute;
+            right: rem(28);
+            top: rem(16);     
+        }
+
+    &--title {
+        margin: rem(16);
+    }
+
+    &--container {
+        display: flex;
+        gap: rem(50);
+        padding-inline: fluid(28, 20);
+        padding-bottom: fluid(28, 20);
+    }   
+    }
+
+    &__arrow-buttons {
+        margin-top: fluid(40, 30);
+        margin-bottom: fluid(90, 50);
+        @include flex-center;
+        column-gap: rem(24);
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: rem(10);
+        padding-bottom: fluid(180, 20);
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+
+        &--button {
+            width: fluid(164, 124);
+            height: fluid(54, 34);
+            padding-block: fluid(10, 8);
+            padding-inline: fluid(20, 18);
+        }
+
+        &--link {
+            color: var(--color-accent);
+            text-decoration: underline !important;
+        }
+
+    }
+
+    &__gradient {
+        position: relative;
+
+        &::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: 0;
+        width: 100%;
+        height: 200%;
+        z-index: -1;
+        background-image: linear-gradient(0deg,rgba(255, 116, 63, 1) 0%, rgba(8, 8, 8, 0.6) 100%);
+        }
+
+        &--vector-1 {
+            position: absolute;
+            bottom: rem(-70);
+            right: rem(-160);
+
+        }
+
+        &--vector-2 {
+            position: absolute;
+            bottom: rem(-200);
+            left: rem(-190);
+        }
+
+    }
+}

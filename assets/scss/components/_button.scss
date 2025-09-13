@@ -1,0 +1,91 @@
+@use '../helpers' as *;
+
+.button {
+    background-color: var(--color-black);
+    border: none;
+    border-radius: var(--border-radius);
+    text-align: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    
+    &--accent {
+        background-color: var(--color-accent);
+        padding: rem(24) rem(40);
+        color: var(--color-light);
+        @include flex-center;
+
+    }
+
+    &--dark {
+        background-color: var(--color-dark);
+        border: none;
+        color: var(--color-light);
+    }
+
+    &--transparent {
+        background-color: transparent;
+        padding: rem(24) rem(40);
+        border: var(--border);
+        color: var(--color-light);
+        @include flex-center;
+
+    }
+
+    &--arrow-dark {
+        width: fluid(70, 40);
+        height: fluid(70, 40);
+        background-color: rgba(29, 29, 29, 1);
+        
+        @include flex-center;
+        & svg {
+            width: fluid(24, 20);
+            height: fluid(24, 20);
+        }
+
+        
+    }
+
+    &--arrow-button-grey-dark {
+        width: fluid(40, 30);
+        height: fluid(40, 30);
+        background-color: var(--color-grey-dark);
+        @include flex-center;
+
+        & svg {
+            width: fluid(18, 15);
+            height: fluid(18, 15);
+        }
+
+    }
+
+    &--arrow-button-grey {
+        width: fluid(40, 30);
+        height: fluid(40, 30);
+        background-color: var(--color-grey);
+        @include flex-center;
+
+        & svg {
+            width: fluid(18, 15);
+            height: fluid(18, 15);
+        }
+    }
+
+    &-arrow-down {
+        width: rem(32);
+        height: rem(32);
+        border-radius: rem(8);
+        border: none;
+        background-color: var(--color-black);
+        @include flex-center;
+
+        & svg {
+            height: rem(18);
+            width: rem(15);
+        }
+
+        @include hover {
+            background-color: var(--color-accent);
+
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@use '../helpers' as *;
+
+.section {
+    padding-block: fluid(100, 50);
+    padding-inline: fluid(20, 10);
+
+    &__alt {
+        &--container {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            padding: 0;
+
+            @include laptop {
+                flex-direction: column;
+                align-items: start;
+            }
+        }
+
+        &--title {
+            padding: 0;
+        }
+
+        &--description {
+            text-align: start;
+        }
+    }
+    
+    &__subtitle {
+        display: flex;
+        justify-content: center;
+        gap: rem(5);
+        font-size: fluid(18, 15);
+        font-weight: 600;
+        color: var(--color-accent);
+
+        &--alt {
+            display: flex;
+            justify-content: start;
+            gap: rem(5);
+            font-size: fluid(18, 15);
+            font-weight: 600;
+            color: var(--color-accent);
+        }
+
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: fluid(80, 50);
+        &--accent {
+            color: var(--color-accent);
+            
+        }
+
+        &--alt {
+            text-align: start;
+            
+            margin-bottom: rem(24);
+        }
+    }
+}

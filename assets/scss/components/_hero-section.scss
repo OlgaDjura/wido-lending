@@ -1,0 +1,324 @@
+@use '../helpers' as *;
+
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    &__video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+        }
+
+    /* Псевдоэлемент для градиента */
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0) 0%,
+        rgba(8, 8, 8, 1) 100%
+        );
+      pointer-events: none; /* чтобы клик сквозь проходил */
+    }
+    }
+
+    &__content {
+        position: relative;
+    z-index: 1; // весь контент выше видео
+    background-color: transparent;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include mobile-s {
+            font-size: fluid(70, 50);
+            
+        }
+
+        &--row {
+            display: flex;
+
+            @include mobile-s {
+            gap: rem(20);
+        }
+        }
+
+        &--logo {
+            width: fluid(160, 100);
+            height: fluid(160, 100);
+
+            &-container {
+                position: relative;
+            }
+
+            &-icon {
+                position: absolute;
+                top: 30%;
+                left: 26%;
+                width: fluid(73, 53);
+                height: fluid(61, 51);
+            }
+
+            @include mobile-s {
+                @include visually-hidden;
+            }
+        }
+    }
+
+    &__card {
+        display: grid;
+        grid-template-columns: 1fr rem(540) 1fr;
+        align-items: stretch;
+        gap: rem(20);
+
+        @include laptop {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+            max-width: rem(500);
+            margin-inline: rem(80);
+            
+
+        }
+
+        &--card-1, &--card-3, &--card-2__mini {
+            border-radius: rem(32);
+            box-shadow: inset 0px 0px 28px 0px rgba(0, 0, 0, 1);
+            padding-bottom: fluid(28, 24);
+            padding-top: rem(16);
+            padding-inline: fluid(28, 24);
+        }
+
+        &--card-1, &--card-3, &--card-2 {
+            height: fluid(700, 400);
+            display: block;
+        }
+
+        &--card-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &__button-1 {
+                @include flex-center;
+                border: none;
+                border-radius: rem(50);
+                background-color: rgba(231, 231, 231, 1);
+                width: fluid(70, 50);
+                height: fluid(70, 50);
+
+                
+            }
+
+            &__description {
+                font-weight: 400;
+                line-height: rem(33);
+            }
+
+
+            &__title-container {
+                display: flex;
+                justify-content: space-between;
+                
+            }
+
+            &__list {
+                
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__img {
+                width: fluid(250, 150);
+                height: fluid(250, 150);
+                border-radius: rem(24);
+
+                @include tablet {
+                    @include visually-hidden;
+
+                }
+            }
+
+            &__button-2 {
+                width: fluid(80, 60);
+                height: Fluid(80, 60);
+                border-radius: rem(24);
+                border: none;
+                background-color: var(--color-accent);
+                @include flex-center;
+
+                @include mobile-s {
+                    width: rem(40);
+                    height: rem(40);
+                }
+
+
+            }
+
+            &__img-buttons {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+
+            }
+
+            &__buttons {
+                display: flex;
+                align-items: end;
+                gap: 10px;
+            }
+        }
+
+        &--card-2 {
+            display: flex;
+            flex-direction: column;
+            gap: rem(20);
+            justify-content: space-between;
+            height: auto;
+            &__description {
+                text-align: center;
+            }
+
+            &__container {
+                display: flex;
+                flex-direction: column;
+                gap: rem(20);
+            }
+
+            &__item {
+                display: flex;
+                column-gap: rem(10);
+            }
+
+            &__buttons {
+                display: flex;
+                justify-content: space-between;
+                padding-inline: rem(10);
+                gap: rem(16);
+
+                @include mobile {
+                    flex-direction: column;
+                    
+                }
+            }
+
+            &__button-1, &__button-2 {
+                width: fluid(264, 180);
+                height: fluid(72, 62);
+
+                @include mobile {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        &--card-3 {
+            position: relative;
+            overflow: hidden;
+
+            &__img-back,
+            &__img-middle,
+            &__img-front {
+                position: absolute;
+                bottom: 0;
+                
+                //height: fluid(450, 400);
+            }
+
+            &__img-back   {
+                left: 0;
+                width: 100%;
+                bottom: -80px;
+                height: auto;
+                
+                z-index: 1; 
+
+                @include mobile {
+                    height: rem(500);
+                }
+                @include mobile-s {
+                    height: rem(400);
+                }
+            }
+            &__img-middle { 
+                bottom: -130px;
+                right: -150px;
+                width: 100%;
+                z-index: 2; 
+                @include mobile {
+                    height: rem(500);
+                }
+                @include mobile-s {
+                    height: rem(400);
+                }
+            }
+            &__img-front  {
+                right: -50px;
+                bottom: -90px;
+                z-index: 3; 
+
+                @include mobile {
+                    height: rem(500);
+                }
+
+                @include mobile-s {
+                    height: rem(400);
+                }
+            }
+        }
+
+        &--footer {
+            margin-top: fluid(50, 20);
+        }
+
+        &--footer-list {
+            display: flex;
+            justify-content: space-between;
+            background-color: var(--color-accent);
+            padding-block: rem(20);
+            padding-inline: rem(30);
+            overflow-x: auto;           /* горизонтальный скролл */
+            white-space: nowrap;        /* запрещаем перенос */
+            -webkit-overflow-scrolling: touch;
+        }
+        &--footer-item, &--footer-item-2 {
+            display: flex;
+            flex: 0 0 auto;
+        }
+
+        &--footer-item-2 {
+            width: fluid(175, 150);
+            height: fluid(44, 40);
+
+        }
+    }
+
+}
+
+
+
+
+
+

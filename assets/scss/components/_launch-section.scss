@@ -1,0 +1,104 @@
+@use '../helpers' as *;
+
+.launch {
+    &__tab-buttons {
+        display: flex;
+        justify-content: center;
+        gap: fluid(74, 30);
+
+        @include mobile {
+            flex-direction: column;
+        }
+        &--button {
+            border: none;
+            border-bottom: 1px solid var(--color-dark);
+        }
+    }
+    &__cards {
+        padding-top: fluid(52, 25);
+        &--card-1 {
+            position: relative;
+            overflow: hidden;
+            border-radius: rem(32);
+            background-color: var(--color-dark);
+            
+
+            &__img-back,
+            &__img-middle,
+            &__img-front {
+                position: absolute;
+                width: auto;
+                height: fluid(600, 300);
+                
+                //height: fluid(450, 400);
+            }
+
+            &__img-back   {
+                right: -30% ;
+                width: 100%;
+                bottom: 0;
+                top: 0;
+                //height: auto;
+                
+                z-index: 1; 
+
+                @include mobile {
+                    height: rem(500);
+                }
+                @include mobile-s {
+                    height: rem(400);
+                }
+            }
+            &__img-middle { 
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                z-index: 2; 
+                
+            }
+            &__img-front  {
+                right: 0;
+                bottom: -20%;
+                z-index: 3; 
+                height: fluid(730, 630);
+                flex-shrink: 0;
+                @include tablet {
+                    bottom: 0;
+                }
+                
+                
+
+                
+            }
+        }
+
+        &--card-2 {
+            &__list {
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                row-gap: rem(20);
+
+                &--item {
+                    display: flex;
+                    flex-direction: column;
+                    gap: rem(16);
+                    padding: fluid(28, 20);
+                    border-radius: rem(32);
+                    background-color: var(--color-dark);
+                    
+
+                    &-title {
+                        display: flex;
+                        align-items: center;
+                        gap: fluid(28, 10);
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+
+                    &-text {
+                        padding-left: fluid(70, 40);
+                    }
+                }
+            }
+        }
+    }
+}

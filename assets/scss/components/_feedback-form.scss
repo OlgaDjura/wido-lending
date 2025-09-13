@@ -1,0 +1,31 @@
+@use '../helpers' as *;
+
+.feedback-form {
+    display: grid;
+    gap: fluid(50, 20) rem(50);
+    padding-top: rem(40);
+
+    @include mobile-s-above {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__cell {
+        &--wide {
+            grid-column: -1 / 1;// чтобы колонка заняла ширину двух
+            border-radius: rem(36);
+        }
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: rem(24);
+
+        @include mobile-s {
+            flex-direction: column;
+            row-gap: rem(20);
+            align-items: stretch;
+        }
+    }
+}

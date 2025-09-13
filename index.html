@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wido</title>
+    <link rel="stylesheet" href="/assets/scss/main.css">
+    <script src="./assets/scripts/main.js" type="module"></script>
+</head>
+
+<body>
+    <header class="header" data-js-header>
+        <div class="header__body">
+            <div class="header__body-inner container">
+                <a href="/" class="header__logo logo" aria-label="Home" title="Home">
+                    <img src="./assets/icons/Logo.svg" alt="" class="logo__image" width="107" height="28">
+                </a>
+                <div class="header__overlay" data-js-header-overlay>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu_item">
+                                <a href="./index.html" class="header__menu-link is-active">Главная</a>
+                            </li>
+                            <li class="header__menu_item">
+                                <a href="./" class="header__menu-link">О нас</a>
+                            </li>
+                            <li class="header__menu_item">
+                                <a href="./" class="header__menu-link">Услуги</a>
+                            </li>
+                            <li class="header__menu_item">
+                                <a href="./" class="header__menu-link">Кейсы</a>
+                            </li>
+                            <li class="header__menu_item">
+                                <a href="./" class="header__menu-link">Блог</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="city-dropdown" class="city-dropdown hidden-mobile">
+                        <button class="city-dropdown__button">Ваш город
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L8 8.5L15 1.5" colo="white" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+
+                        <div class="city-dropdown__menu">
+                            <label class="city-dropdown__label" for="city-dropdown__input">Найдите ваш город</label>
+                            <input type="text" class="city-dropdown__input" id="city-dropdown__input"
+                                placeholder="Поиск по городам" />
+                            <ul class="city-dropdown__list"></ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="header__burger-button burger-button visible-mobile" data-js-header-burger-button
+                    type="button" aria-label="Open menu" title="Open menu">
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" aria-labelledby="hero__title">
+        <div class="hero__video-background">
+            <video class="hero__video-background--bg" autoplay muted loop playsinline>
+                <source src="/assets/video/backgroun-hero.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero__content container">
+            <h1 class="hero__title" id="hero__title">
+                <span class="hero__title--row">
+                    <span class="hero__title--part">W1DO</span>
+                    <div class="hero__title--logo-container">
+                        <img src="./assets/icons/circle-logo.svg" alt="Логотип" class="hero__title--logo" width="160"
+                    height="160">
+                    <img src="./assets/icons/hero-arrow-logo.svg" alt="" 
+                    class="hero__title--logo-icon"
+                    width="73"
+                    height="61"
+                    >
+                    </div>
+                    
+                    <span class="hero__title--part">DIGITAL</span>
+                </span>
+                <span class="hero__title--row hero__title--row-center">AGENCY</span>
+            </h1>
+            <div class="hero__card">
+                <div class="hero__card--card-1">
+                    <div class="hero__card--card-1__title-container">
+                        <h2 class="hero__card--card-1__title h2">32LINKS</h2>
+                        <button class="hero__card--card-1__button-1" type="submit" aria-label="button">
+                            <svg viewBox="0 0 33.9411 33.9411" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="33.941116" height="33.941132"
+                                fill="none">
+                                <path id="Vector" d="M0 0L21.5625 0" stroke="rgb(42,42,42)" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="3"
+                                    transform="matrix(0.707107,-0.707107,0.707107,0.707107,9.34709,24.594)" />
+                                <path id="Vector" d="M0 20.125L10.0625 10.0625L0 0" fill-rule="nonzero"
+                                    stroke="rgb(42,42,42)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3"
+                                    transform="matrix(0.707107,-0.707107,0.707107,0.707107,10.3635,9.34709)" />
+                            </svg>
+
+                        </button>
+                    </div>
+                    <p class="hero__card--card-1__description">Маркетплейс для продвижения проектов на различных
+                        площадках,
+                        включая Вконтакте и Телеграм. Это большой и сложный проект, над ...</p>
+                    <div class="hero__card--card-1__container"></div>
+                    <ul class="hero__card--card-1__list">
+                        <li class="hero__card--card-1__item">#Dev</li>
+                        <li class="hero__card--card-1__item">#Design</li>
+                        <li class="hero__card--card-1__item">#Marketplace</li>
+                    </ul>
+                    <div class="hero__card--card-1__img-buttons">
+                        <div class="hero__card--card-1__buttons">
+                            <button class="hero__card--card-1__button-2" type="submit" aria-label="button">
+                                <svg viewBox="0 0 73.5391 73.5391" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="73.539062" height="73.539093"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Vector 4"
+                                        d="M56 28.0976C49.4795 29.3984 36.4384 35.2 36.4384 48L26.8493 48C26.5936 44.878 28.1534 36.5268 36.4384 28.0976L0 28.0976L0 19.9024L36.4384 19.9024C28.1534 11.4732 26.5936 3.12195 26.8493 0L36.4384 0C36.4384 12.8 49.4795 18.6016 56 19.9024L56 28.0976Z"
+                                        fill="rgb(255,255,255)" fill-rule="nonzero"
+                                        transform="matrix(0.707107,0.707107,-0.707107,0.707107,33.9411,3.05176e-05)" />
+                                </svg>
+                            </button>
+                            <button class="hero__card--card-1__button-3 button--arrow-button-grey-dark  button"
+                                type="submit" aria-label="button">
+                                <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="18.000000" height="18.000000"
+                                    fill="none">
+                                    <path id="Vector" d="M0 0L16.1719 0" stroke="rgb(255,255,255)"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        transform="matrix(-1,-8.74228e-08,8.74228e-08,-1,17.0859,9)" />
+                                    <path id="Vector" d="M0 15.0937L7.54688 7.54687L0 0" fill-rule="nonzero"
+                                        stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        transform="matrix(-1,-8.74228e-08,8.74228e-08,-1,8.46094,16.5469)" />
+                                </svg>
+                            </button>
+                            <button class="hero__card--card-1__button-4 button--arrow-button-grey button " type="submit"
+                                aria-label="button">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_0_2774)">
+                                        <path d="M0.914062 9H17.0859" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.53906 16.5469L17.0859 9L9.53906 1.45312" stroke="white"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <img src="./assets/images/Project Image.jpg" alt="Project" class="hero__card--card-1__img"
+                            width="300" height="300">
+                    </div>
+                </div>
+                <div class="hero__card--card-2">
+                    <div class="hero__card--card-2__container">
+                        <p class="hero__card--card-2__description">Создаем сайты и IT-продукты, которые упрощают ваши
+                            процессы и задачи</p>
+                        <div class="hero__card--card-2__buttons">
+                            <button class="hero__card--card-2__button-1 button button--accent" type="submit"
+                                aria-label="Заказать проект">Заказать проект</button>
+                            <button class="hero__card--card-2__button-2 button button--transparent " type="submit"
+                                aria-label="Консультация">Консультация</button>
+                        </div>
+                    </div>
+                    <div class="hero__card--card-2__mini">
+                        <h3 class="hero__card--card-2__title h2">Мы это:</h3>
+                        <ul class="hero__card--card-2__list">
+                            <li class="hero__card--card-2__item">
+                                <img src="./assets/icons/star-orange.svg" alt="star"
+                                    class="hero__card--card-2__item--img" width="16" height="16"><span>Много годовая
+                                    насмотренность
+                                    и лучший опыт</span>
+
+                            </li>
+                            <li class="hero__card--card-2__item">
+                                <img src="./assets/icons/star-orange.svg" alt="star"
+                                    class="hero__card--card-2__item--img" width="16" height="16">
+                                <span>Более 100 реализованных сервисов
+                                    и сайтов</span>
+                            </li>
+                            <li class="hero__card--card-2__item">
+                                <img src="./assets/icons/star-orange.svg" alt="star"
+                                    class="hero__card--card-2__item--img" width="16" height="16">
+                                <span>Построение продуктов с микро-сервисной архитекторой</span>
+                            </li>
+                            <li class="hero__card--card-2__item">
+                                <img src="./assets/icons/star-orange.svg" alt="star"
+                                    class="hero__card--card-2__item--img" width="16" height="16">
+                                <span>Опытные devOps, developers, designer специалисты</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="hero__card--card-3">
+                    <h2 class="hero__card--card-3__title h2">
+                        Tech Lead CTO
+                    </h2>
+                    <p class="hero__card--card-3__description">Разработчик <br> стартапов</p>
+                    <div class="hero__card--card-3__container">
+                        <img src="./assets/images/elipse 2.png" alt="" class="hero__card--card-3__img-back">
+                        <img src="./assets/images/Vector 4.png" alt="" class="hero__card--card-3__img-middle">
+                        <img src="./assets/images/photo-hero.png" alt="Разработчик"
+                            class="hero__card--card-3__img-front">
+                    </div>
+                </div>
+            </div>
+            <div class="hero__card--footer">
+                <ul class="hero__card--footer-list">
+                    <li class="hero__card--footer-item">
+                        <img class="hero__card--footer-star" src="./assets/icons/star-white.svg" alt="" width="16"
+                            height="16">
+                    </li>
+                    <li class="hero__card--footer-item-2">
+                        <img src="./assets/icons/intercom.svg" alt="intercom" class="hero__card--footer-img" width="178"
+                            height="44">
+                    </li>
+                    <li class="hero__card--footer-item">
+                        <img class="hero__card--footer-star" src="./assets/icons/star-white.svg" alt="" width="16"
+                            height="16">
+                    </li>
+                    <li class="hero__card--footer-item-2">
+                        <img src="./assets/icons/xbox.svg" alt="xbox" class="hero__card--footer-img" width="180"
+                            height="55">
+                    </li>
+                    <li class="hero__card--footer-item">
+                        <img class="hero__card--footer-star" src="./assets/icons/star-white.svg" alt="" width="16"
+                            height="16">
+                    </li>
+                    <li class="hero__card--footer-item-2">
+                        <img src="./assets/icons/patagonia.svg" alt="patagonia" class="hero__card--footer-img"
+                            width="173" height="34">
+                    </li>
+                    <li class="hero__card--footer-item">
+                        <img class="hero__card--footer-star" src="./assets/icons/star-white.svg" alt="" width="16"
+                            height="16">
+                    </li>
+                    <li class="hero__card--footer-item-2">
+                        <img src="./assets/icons/intercom.svg" alt="intercom" class="hero__card--footer-img" width="178"
+                            height="44">
+                    </li>
+                    <li class="hero__card--footer-item">
+                        <img class="hero__card--footer-star" src="./assets/icons/star-white.svg" alt="" width="16"
+                            height="16">
+                    </li>
+                    <li class="hero__card--footer-item-2">
+                        <img src="./assets/icons/intercom.svg" alt="intercom" class="hero__card--footer-img" width="178"
+                            height="44">
+                    </li>
+                    <li class="hero__card--footer-item">
+                        <img class="hero__card--footer-star" src="./assets/icons/star-white.svg" alt="" width="16"
+                            height="16">
+                    </li>
+                    <li class="hero__card--footer-item-2">
+                        <img src="./assets/icons/xbox.svg" alt="xbox" class="hero__card--footer-img" width="180"
+                            height="55">
+                    </li>
+                    <li class="hero__card--footer-item">
+                        <img class="hero__card--footer-star" src="./assets/icons/star-white.svg" alt="" width="16"
+                            height="16">
+                    </li>
+                    <li class="hero__card--footer-item-2">
+                        <img src="./assets/icons/patagonia.svg" alt="patagonia" class="hero__card--footer-img"
+                            width="173" height="34">
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" aria-labelledby="task-title">
+        <div class="section__subtitle">
+            <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
+            <p class="section__subtitle--text">КАТЕГОРИИ УСЛУГ</p>
+        </div>
+        <h2 class="section__title h2" id="task-title">ЛЮБОЙ ФОРМАТ <span class="section__title--accent">САЙТА</span> С
+            УЧЁТОМ <br> ЗАДАЧ И АУДИТОРИИ</h2>
+
+        <div class="task container overflow">
+
+            <ul class="task__list grid grid--template-3">
+                <li class="task__item">
+                    <img src="./assets/images/card-task-1.jpg" alt="banner-1" class="task__item--img" width="613"
+                        height="360">
+                    <button class="task__item--button button button--arrow-dark" aria-label="Кнопка" type="button"><svg
+                            viewBox="0 0 33.9411 33.9412" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="33.941116" height="33.941162" fill="none">
+                            <path id="Vector" d="M0 0L21.5625 0" stroke="rgb(255,255,255)" stroke-opacity="0.5"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,9.34715,24.5941)" />
+                            <path id="Vector" d="M0 20.125L10.0625 10.0625L0 0" fill-rule="nonzero"
+                                stroke="rgb(255,255,255)" stroke-opacity="0.5" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="3"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,10.3635,9.34705)" />
+                        </svg></button>
+                    <h4 class="task__item--title h4">Лендинги</h4>
+                    <div class="task__item--container">
+                        <img src="./assets/icons/section-task/Search Window-1.svg" alt="" class="task__item--icon"
+                            width="50" height="50">
+                        <p class="task__item--description">Создание платформы для покупки и продажи услуг. Включает
+                            функционал для пользователей</p>
+                    </div>
+                </li>
+                <li class="task__item">
+                    <img src="./assets/images/card-task-2.jpg" alt="banner-2" class="task__item--img" width="613"
+                        height="360">
+                    <button class="task__item--button button button--arrow-dark" aria-label="Кнопка" type="button"><svg
+                            viewBox="0 0 33.9411 33.9412" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="33.941116" height="33.941162" fill="none">
+                            <path id="Vector" d="M0 0L21.5625 0" stroke="rgb(255,255,255)" stroke-opacity="0.5"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,9.34715,24.5941)" />
+                            <path id="Vector" d="M0 20.125L10.0625 10.0625L0 0" fill-rule="nonzero"
+                                stroke="rgb(255,255,255)" stroke-opacity="0.5" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="3"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,10.3635,9.34705)" />
+                        </svg></button>
+                    <h4 class="task__item--title h4">Сайты-визитки</h4>
+                    <div class="task__item--container">
+                        <img src="./assets/icons/section-task/Presentation Streamline-2.svg" alt=""
+                            class="task__item--icon" width="50" height="50">
+                        <p class="task__item--description">Создание платформы для покупки и продажи услуг. Включает
+                            функционал для пользователей</p>
+                    </div>
+                </li>
+                <li class="task__item">
+                    <img src="./assets/images/card-task-3.jpg" alt="banner-3" class="task__item--img" width="613"
+                        height="360">
+                    <button class="task__item--button button button--arrow-dark" aria-label="Кнопка" type="button"><svg
+                            viewBox="0 0 33.9411 33.9412" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="33.941116" height="33.941162" fill="none">
+                            <path id="Vector" d="M0 0L21.5625 0" stroke="rgb(255,255,255)" stroke-opacity="0.5"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,9.34715,24.5941)" />
+                            <path id="Vector" d="M0 20.125L10.0625 10.0625L0 0" fill-rule="nonzero"
+                                stroke="rgb(255,255,255)" stroke-opacity="0.5" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="3"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,10.3635,9.34705)" />
+                        </svg></button>
+                    <h4 class="task__item--title h4">Корпоративные сайты</h4>
+                    <div class="task__item--container">
+                        <img src="./assets/icons/section-task/Business Suitcase 2-3.svg" alt="" class="task__item--icon"
+                            width="50" height="50">
+                        <p class="task__item--description">Создание платформы для покупки и продажи услуг. Включает
+                            функционал для пользователей</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="task__gradient">
+                <div class="task__arrow-buttons">
+                    <button class="task__arrow-buttons--button button button--arrow-button-grey-dark" type="button"
+                        aria-label="Кнопка">
+                        <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="18.000000" height="18.000000" fill="none">
+                            <path id="Vector" d="M0 0L16.1719 0" stroke="rgb(255,255,255)" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"
+                                transform="matrix(-1,-8.74228e-08,8.74228e-08,-1,17.0859,9)" />
+                            <path id="Vector" d="M0 15.0937L7.54688 7.54687L0 0" fill-rule="nonzero"
+                                stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" transform="matrix(-1,-8.74228e-08,8.74228e-08,-1,8.46094,16.5469)" />
+                        </svg>
+                    </button>
+                    <button class="task__arrow-buttons--button button button--arrow-button-grey" type="button"
+                        aria-label="Кнопка">
+                        <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="18.000000" height="18.000000" fill="none">
+                            <path id="Vector" d="M0.914062 9L17.0859 9" stroke="rgb(42,42,42)" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" />
+                            <path id="Vector" d="M9.53906 16.5469L17.0859 9L9.53906 1.45312" fill-rule="nonzero"
+                                stroke="rgb(42,42,42)" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="task__footer">
+                    <button class="task__footer--button button button--accent" type="button"
+                        aria-label="Кнопка">Бесплатно</button>
+                    <p class="task__footer--description">Давайте сделаем что-то великое вместе.</p>
+                    <a href="/" class="task__footer--link">Получите бесплатную консультацию</a>
+                </div>
+                <img src="./assets/images/vector-arrow-down.png" alt="" class="task__gradient--vector-1" width="364"
+                    height="312">
+                <img src="./assets/images/arrow-star.png" alt="" class="task__gradient--vector-2" width="413"
+                    height="413">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" aria-labelledby="stages-title">
+        <div class="section__subtitle">
+            <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
+            <p class="section__subtitle--text">ПРОЦЕСС</p>
+        </div>
+        <h2 class="section__title h2" id="stages-title">ПРОЗРАЧНЫЙ ЦИКЛ <br> РАБОТ ОТ <span
+                class="section__title--accent">ИДЕИ ДО ЗАПУСКА</span>
+        </h2>
+
+        <div class="stages grid grid--template-3 container ">
+            <div class="stages__cols-1">
+                <div class="stages__cols-1--row">
+                    <div class="stages__cols-1--row__title">
+                        <img src="./assets/icons/star-orange.svg" alt="star" class="stages__cols-1--row__icon"
+                            width="16">
+                        <h3 class="stages__cols-1--row__text h3">Индивидуальный дизайн</h3>
+                    </div>
+                    <div class="stages__cols-1--row__description">
+                        <p>
+                            Создание платформы для покупки и продажи услуг. Включает функционал для пользователей
+                            Создание платформы для покупки и продажи услуг. Включает функционал для пользователей
+                        </p>
+                    </div>
+                    <button class="stages__cols-1--row__button margin" type="button" aria-label="Кнопка">
+                        <svg viewBox="0 0 56.5685 56.5684" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="56.568542" height="56.568359" fill="none">
+                            <path id="Vector" d="M0 0L35.9375 0" stroke="rgb(255,116,63)" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,15.5784,40.99)" />
+                            <path id="Vector" d="M0 33.5417L16.7708 16.7708L0 0" fill-rule="nonzero"
+                                stroke="rgb(255,116,63)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,17.2726,15.5784)" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="stages__cols-1--row">
+                    <div class="stages__cols-1--row__title">
+                        <img src="./assets/icons/star-orange.svg" alt="star" class="stages__cols-1--row__icon"
+                            width="16">
+                        <h3 class="stages__cols-1--row__text h3">Удобная админ панель</h3>
+                    </div>
+                    <div class="stages__cols-1--row__description">
+                        <p>
+                            Создание платформы для покупки и продажи услуг. Включает функционал для пользователей
+                            Создание платформы для покупки и продажи услуг. Включает функционал для пользователей.
+                        </p>
+                    </div>
+                    <button class="stages__cols-1--row__button margin" type="button" aria-label="Кнопка">
+                        <svg viewBox="0 0 56.5685 56.5684" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="56.568542" height="56.568359" fill="none">
+                            <path id="Vector" d="M0 0L35.9375 0" stroke="rgb(255,116,63)" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,15.5784,40.99)" />
+                            <path id="Vector" d="M0 33.5417L16.7708 16.7708L0 0" fill-rule="nonzero"
+                                stroke="rgb(255,116,63)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,17.2726,15.5784)" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="stages__cols-1">
+                <div class="stages__cols-1--row">
+                    <div class="stages__cols-1--row__title">
+                        <img src="./assets/icons/star-orange.svg" alt="star" class="stages__cols-1--row__icon"
+                            width="16">
+                        <h3 class="stages__cols-1--row__text h3">Интеграция с CRM </h3>
+                    </div>
+                    <div class="stages__cols-1--row__description">
+                        <p>
+                            Создание платформы для покупки и продажи
+                        </p>
+                    </div>
+                    <button class="stages__cols-1--row__button margin-2" type="button" aria-label="Кнопка">
+                        <svg viewBox="0 0 56.5685 56.5684" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="56.568542" height="56.568359" fill="none">
+                            <path id="Vector" d="M0 0L35.9375 0" stroke="rgb(255,116,63)" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,15.5784,40.99)" />
+                            <path id="Vector" d="M0 33.5417L16.7708 16.7708L0 0" fill-rule="nonzero"
+                                stroke="rgb(255,116,63)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,17.2726,15.5784)" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="stages__cols-1--row">
+                    <div class="stages__cols-1--row__title">
+                        <img src="./assets/icons/star-orange.svg" alt="star" class="stages__cols-1--row__icon"
+                            width="16">
+                        <h3 class="stages__cols-1--row__text h3">Обучение</h3>
+                    </div>
+                    <div class="stages__cols-1--row__description">
+                        <p>
+                            Создание платформы для покупки и продажи
+                        </p>
+                    </div>
+                    <button class="stages__cols-1--row__button margin-2" type="button" aria-label="Кнопка">
+                        <svg viewBox="0 0 56.5685 56.5684" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="56.568542" height="56.568359" fill="none">
+                            <path id="Vector" d="M0 0L35.9375 0" stroke="rgb(255,116,63)" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,15.5784,40.99)" />
+                            <path id="Vector" d="M0 33.5417L16.7708 16.7708L0 0" fill-rule="nonzero"
+                                stroke="rgb(255,116,63)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,17.2726,15.5784)" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="stages__cols-1--row">
+                    <div class="stages__cols-1--row__title">
+                        <img src="./assets/icons/star-orange.svg" alt="star" class="stages__cols-1--row__icon"
+                            width="16">
+                        <h3 class="stages__cols-1--row__text h3">Адаптивная верстка</h3>
+                    </div>
+                    <div class="stages__cols-1--row__description">
+                        <p>
+                            Создание платформы для покупки и продажи
+                        </p>
+                    </div>
+                    <button class="stages__cols-1--row__button margin-2" type="button" aria-label="Кнопка">
+                        <svg viewBox="0 0 56.5685 56.5684" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="56.568542" height="56.568359" fill="none">
+                            <path id="Vector" d="M0 0L35.9375 0" stroke="rgb(255,116,63)" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,15.5784,40.99)" />
+                            <path id="Vector" d="M0 33.5417L16.7708 16.7708L0 0" fill-rule="nonzero"
+                                stroke="rgb(255,116,63)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,17.2726,15.5784)" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="stages__cols-1">
+                <div class="stages__cols-1--row">
+                    <div class="stages__cols-1--row__title">
+                        <img src="./assets/icons/star-orange.svg" alt="star" class="stages__cols-1--row__icon"
+                            width="16">
+                        <h3 class="stages__cols-1--row__text h3">SEO-оптимизация</h3>
+                    </div>
+                    <div class="stages__cols-1--row__description">
+                        <p>
+                            Создание платформы для покупки и продажи услуг. Включает функционал для пользователей
+                            Создание платформы для покупки и продажи услуг. Включает функционал для пользователей
+                        </p>
+                    </div>
+                    <button class="stages__cols-1--row__button margin" type="button" aria-label="Кнопка">
+                        <svg viewBox="0 0 56.5685 56.5684" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="56.568542" height="56.568359" fill="none">
+                            <path id="Vector" d="M0 0L35.9375 0" stroke="rgb(255,116,63)" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,15.5784,40.99)" />
+                            <path id="Vector" d="M0 33.5417L16.7708 16.7708L0 0" fill-rule="nonzero"
+                                stroke="rgb(255,116,63)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,17.2726,15.5784)" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="stages__cols-1--row">
+                    <div class="stages__cols-1--row__title">
+                        <img src="./assets/icons/star-orange.svg" alt="star" class="stages__cols-1--row__icon"
+                            width="16">
+                        <h3 class="stages__cols-1--row__text h3">Настройка аналитики</h3>
+                    </div>
+                    <div class="stages__cols-1--row__description">
+                        <p>
+                            Создание платформы для покупки и продажи услуг. Включает функционал для пользователей
+                            Создание платформы для покупки и продажи услуг. Включает функционал для пользователей
+                        </p>
+                    </div>
+                    <button class="stages__cols-1--row__button margin" type="button" aria-label="Кнопка">
+                        <svg viewBox="0 0 56.5685 56.5684" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="56.568542" height="56.568359" fill="none">
+                            <path id="Vector" d="M0 0L35.9375 0" stroke="rgb(255,116,63)" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,15.5784,40.99)" />
+                            <path id="Vector" d="M0 33.5417L16.7708 16.7708L0 0" fill-rule="nonzero"
+                                stroke="rgb(255,116,63)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"
+                                transform="matrix(0.707107,-0.707107,0.707107,0.707107,17.2726,15.5784)" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" aria-labelledby="possibilities-title">
+        <div class="section__subtitle">
+            <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
+            <p class="section__subtitle--text">НАШИ ВОЗМОЖНОСТИ</p>
+        </div>
+        <h2 class="section__title h2" id="possibilities-title">ДОРАБОТКИ, <span
+                class="section__title--accent">СОЗДАНИЕ</span>
+            ПРОДУКТОВ, <br> АВТОМОТИЗАЦИЯ И ИНТЕГРАЦИЯ
+        </h2>
+
+        <div class="possibilities grid grid--template-2 container">
+            <div class="possibilities__card">
+                <div class="possibilities__card--container">
+                    <h3 class="possibilities__card--title h3">Фронтенд</h3>
+                    <button class="possibilities__card--button button button--transparent" type="button"
+                        aria-label="Кнопка">
+                        Связаться
+                    </button>
+                </div>
+                <div class="possibilities__card--description">
+                    <p>
+                        Клиентская часть для удобного взаимодействия <br>
+                        с пользователем
+                    </p>
+                </div>
+                <ul class="possibilities__card--list">
+                    <li class="possibilities__card--item">
+                        <button class="possibilities__card--item-button button button-arrow-down" type="button"
+                            aria-label="Кнопка">
+                            <svg viewBox="0 0 23.5325 23.5327" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="23.532471" height="23.532715"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 4"
+                                    d="M17.92 8.99122C15.8334 9.40748 11.6603 11.264 11.6603 15.36L8.59179 15.36C8.50996 14.361 9.0091 11.6886 11.6603 8.99122L0 8.99122L0 6.36878L11.6603 6.36878C9.0091 3.67141 8.50996 0.999024 8.59179 0L11.6603 0C11.6603 4.096 15.8334 5.95252 17.92 6.36878L17.92 8.99122Z"
+                                    fill="rgb(255,255,255)" fill-rule="nonzero"
+                                    transform="matrix(0.707107,0.707107,-0.707107,0.707107,10.8611,0)" />
+                            </svg>
+                        </button>
+                        <p class="possibilities__card--item-text">Разработка</p>
+                    </li>
+                    <li class="possibilities__card--item">
+                        <button class="possibilities__card--item-button button button-arrow-down" type="button"
+                            aria-label="Кнопка">
+                            <svg viewBox="0 0 23.5325 23.5327" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="23.532471" height="23.532715"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 4"
+                                    d="M17.92 8.99122C15.8334 9.40748 11.6603 11.264 11.6603 15.36L8.59179 15.36C8.50996 14.361 9.0091 11.6886 11.6603 8.99122L0 8.99122L0 6.36878L11.6603 6.36878C9.0091 3.67141 8.50996 0.999024 8.59179 0L11.6603 0C11.6603 4.096 15.8334 5.95252 17.92 6.36878L17.92 8.99122Z"
+                                    fill="rgb(255,255,255)" fill-rule="nonzero"
+                                    transform="matrix(0.707107,0.707107,-0.707107,0.707107,10.8611,0)" />
+                            </svg>
+                        </button>
+                        <p class="possibilities__card--item-text">Парсинг и автоматизация</p>
+                    </li>
+                    <li class="possibilities__card--item">
+                        <button class="possibilities__card--item-button button button-arrow-down" type="button"
+                            aria-label="Кнопка">
+                            <svg viewBox="0 0 23.5325 23.5327" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="23.532471" height="23.532715"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 4"
+                                    d="M17.92 8.99122C15.8334 9.40748 11.6603 11.264 11.6603 15.36L8.59179 15.36C8.50996 14.361 9.0091 11.6886 11.6603 8.99122L0 8.99122L0 6.36878L11.6603 6.36878C9.0091 3.67141 8.50996 0.999024 8.59179 0L11.6603 0C11.6603 4.096 15.8334 5.95252 17.92 6.36878L17.92 8.99122Z"
+                                    fill="rgb(255,255,255)" fill-rule="nonzero"
+                                    transform="matrix(0.707107,0.707107,-0.707107,0.707107,10.8611,0)" />
+                            </svg>
+                        </button>
+                        <p class="possibilities__card--item-text">Подключение платёжных систем на сайт</p>
+                    </li>
+                    <li class="possibilities__card--item">
+                        <button class="possibilities__card--item-button button button-arrow-down" type="button"
+                            aria-label="Кнопка">
+                            <svg viewBox="0 0 23.5325 23.5327" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="23.532471" height="23.532715"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 4"
+                                    d="M17.92 8.99122C15.8334 9.40748 11.6603 11.264 11.6603 15.36L8.59179 15.36C8.50996 14.361 9.0091 11.6886 11.6603 8.99122L0 8.99122L0 6.36878L11.6603 6.36878C9.0091 3.67141 8.50996 0.999024 8.59179 0L11.6603 0C11.6603 4.096 15.8334 5.95252 17.92 6.36878L17.92 8.99122Z"
+                                    fill="rgb(255,255,255)" fill-rule="nonzero"
+                                    transform="matrix(0.707107,0.707107,-0.707107,0.707107,10.8611,0)" />
+                            </svg>
+                        </button>
+                        <p class="possibilities__card--item-text">Доработка кода React</p>
+                    </li>
+                    <li class="possibilities__card--item">
+                        <button class="possibilities__card--item-button button button-arrow-down" type="button"
+                            aria-label="Кнопка">
+                            <svg viewBox="0 0 23.5325 23.5327" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="23.532471" height="23.532715"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 4"
+                                    d="M17.92 8.99122C15.8334 9.40748 11.6603 11.264 11.6603 15.36L8.59179 15.36C8.50996 14.361 9.0091 11.6886 11.6603 8.99122L0 8.99122L0 6.36878L11.6603 6.36878C9.0091 3.67141 8.50996 0.999024 8.59179 0L11.6603 0C11.6603 4.096 15.8334 5.95252 17.92 6.36878L17.92 8.99122Z"
+                                    fill="rgb(255,255,255)" fill-rule="nonzero"
+                                    transform="matrix(0.707107,0.707107,-0.707107,0.707107,10.8611,0)" />
+                            </svg>
+                        </button>
+                        <p class="possibilities__card--item-text">Парсинг карт Google</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="possibilities__card">
+                <div class="possibilities__card--container">
+                    <h3 class="possibilities__card--title h3">Бэкенд</h3>
+                    <button class="possibilities__card--button button button--transparent" type="button"
+                        aria-label="Кнопка">
+                        Связаться
+                    </button>
+                </div>
+                <div class="possibilities__card--description">
+                    <p>
+                        Серверная часть для эффективной обработки <br> информации.
+                    </p>
+                </div>
+                <ul class="possibilities__card--list">
+                    <li class="possibilities__card--item">
+                        <button class="possibilities__card--item-button button button-arrow-down" type="button"
+                            aria-label="Кнопка">
+                            <svg viewBox="0 0 23.5325 23.5327" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="23.532471" height="23.532715"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 4"
+                                    d="M17.92 8.99122C15.8334 9.40748 11.6603 11.264 11.6603 15.36L8.59179 15.36C8.50996 14.361 9.0091 11.6886 11.6603 8.99122L0 8.99122L0 6.36878L11.6603 6.36878C9.0091 3.67141 8.50996 0.999024 8.59179 0L11.6603 0C11.6603 4.096 15.8334 5.95252 17.92 6.36878L17.92 8.99122Z"
+                                    fill="rgb(255,255,255)" fill-rule="nonzero"
+                                    transform="matrix(0.707107,0.707107,-0.707107,0.707107,10.8611,0)" />
+                            </svg>
+                        </button>
+                        <p class="possibilities__card--item-text">Создание сайтов и Mini apps в Telegram</p>
+                    </li>
+                    <li class="possibilities__card--item">
+                        <button class="possibilities__card--item-button button button-arrow-down" type="button"
+                            aria-label="Кнопка">
+                            <svg viewBox="0 0 23.5325 23.5327" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="23.532471" height="23.532715"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 4"
+                                    d="M17.92 8.99122C15.8334 9.40748 11.6603 11.264 11.6603 15.36L8.59179 15.36C8.50996 14.361 9.0091 11.6886 11.6603 8.99122L0 8.99122L0 6.36878L11.6603 6.36878C9.0091 3.67141 8.50996 0.999024 8.59179 0L11.6603 0C11.6603 4.096 15.8334 5.95252 17.92 6.36878L17.92 8.99122Z"
+                                    fill="rgb(255,255,255)" fill-rule="nonzero"
+                                    transform="matrix(0.707107,0.707107,-0.707107,0.707107,10.8611,0)" />
+                            </svg>
+                        </button>
+                        <p class="possibilities__card--item-text">Доработка</p>
+                    </li>
+                    <li class="possibilities__card--item">
+                        <button class="possibilities__card--item-button button button-arrow-down" type="button"
+                            aria-label="Кнопка">
+                            <svg viewBox="0 0 23.5325 23.5327" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="23.532471" height="23.532715"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 4"
+                                    d="M17.92 8.99122C15.8334 9.40748 11.6603 11.264 11.6603 15.36L8.59179 15.36C8.50996 14.361 9.0091 11.6886 11.6603 8.99122L0 8.99122L0 6.36878L11.6603 6.36878C9.0091 3.67141 8.50996 0.999024 8.59179 0L11.6603 0C11.6603 4.096 15.8334 5.95252 17.92 6.36878L17.92 8.99122Z"
+                                    fill="rgb(255,255,255)" fill-rule="nonzero"
+                                    transform="matrix(0.707107,0.707107,-0.707107,0.707107,10.8611,0)" />
+                            </svg>
+                        </button>
+                        <p class="possibilities__card--item-text">Создание подписки для пользователя</p>
+                    </li>
+                    <li class="possibilities__card--item">
+                        <button class="possibilities__card--item-button button button-arrow-down" type="button"
+                            aria-label="Кнопка">
+                            <svg viewBox="0 0 23.5325 23.5327" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="23.532471" height="23.532715"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 4"
+                                    d="M17.92 8.99122C15.8334 9.40748 11.6603 11.264 11.6603 15.36L8.59179 15.36C8.50996 14.361 9.0091 11.6886 11.6603 8.99122L0 8.99122L0 6.36878L11.6603 6.36878C9.0091 3.67141 8.50996 0.999024 8.59179 0L11.6603 0C11.6603 4.096 15.8334 5.95252 17.92 6.36878L17.92 8.99122Z"
+                                    fill="rgb(255,255,255)" fill-rule="nonzero"
+                                    transform="matrix(0.707107,0.707107,-0.707107,0.707107,10.8611,0)" />
+                            </svg>
+                        </button>
+                        <p class="possibilities__card--item-text">Парсинг карт Яндекс</p>
+                    </li>
+                    <li class="possibilities__card--item">
+                        <button class="possibilities__card--item-button button button-arrow-down" type="button"
+                            aria-label="Кнопка">
+                            <svg viewBox="0 0 23.5325 23.5327" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="23.532471" height="23.532715"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 4"
+                                    d="M17.92 8.99122C15.8334 9.40748 11.6603 11.264 11.6603 15.36L8.59179 15.36C8.50996 14.361 9.0091 11.6886 11.6603 8.99122L0 8.99122L0 6.36878L11.6603 6.36878C9.0091 3.67141 8.50996 0.999024 8.59179 0L11.6603 0C11.6603 4.096 15.8334 5.95252 17.92 6.36878L17.92 8.99122Z"
+                                    fill="rgb(255,255,255)" fill-rule="nonzero"
+                                    transform="matrix(0.707107,0.707107,-0.707107,0.707107,10.8611,0)" />
+                            </svg>
+                        </button>
+                        <p class="possibilities__card--item-text">Технический блог</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" aria-labelledby="development-title">
+        <div class="section section__alt--container container">
+            <div class="section section__alt--title">
+                <div class="section__subtitle--alt">
+                    <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
+                    <p class="section__subtitle--text">ЭТАПЫ РАЗРАБОТКИ</p>
+                </div>
+                <h2 class="section__title--alt h2" id="development-title"><span class="section__title--accent">МЫ</span>
+                    ВЕДЁМ ПРОЦЕСС - ОТ ИДЕИ <br> ДО <span class="section__title--accent">ЗАПУСКА</span>
+                </h2>
+            </div>
+            <div class="section__alt--description">Даже если вы начинаете с нуля, мы обеспечим <br> полный и
+                качественный цикл реализации <br> проекта.</div>
+        </div>
+        <div class="development container">
+            <div class="development__scroll">
+                <div class="development__scroll--arrow-buttons">
+                    <button class="task__arrow-buttons--button button button--arrow-button-grey-dark" type="button"
+                        aria-label="Кнопка">
+                        <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="18.000000" height="18.000000" fill="none">
+                            <path id="Vector" d="M0 0L16.1719 0" stroke="rgb(255,255,255)" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"
+                                transform="matrix(-1,-8.74228e-08,8.74228e-08,-1,17.0859,9)" />
+                            <path id="Vector" d="M0 15.0937L7.54688 7.54687L0 0" fill-rule="nonzero"
+                                stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" transform="matrix(-1,-8.74228e-08,8.74228e-08,-1,8.46094,16.5469)" />
+                        </svg>
+                    </button>
+                    <button class="task__arrow-buttons--button button button--arrow-button-grey" type="button"
+                        aria-label="Кнопка">
+                        <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="18.000000" height="18.000000" fill="none">
+                            <path id="Vector" d="M0.914062 9L17.0859 9" stroke="rgb(42,42,42)" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" />
+                            <path id="Vector" d="M9.53906 16.5469L17.0859 9L9.53906 1.45312" fill-rule="nonzero"
+                                stroke="rgb(42,42,42)" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" />
+                        </svg>
+                    </button>
+                </div>
+                <ul class="development__scroll--list ">
+                    <li class="development__scroll--item">Анализируем цели и аудиторию.
+                        Определяем задачи проекта и формируем техническое задание.</li>
+                    <li class="development__scroll--item">Создаём прототип, показывающий работу интерфейса до
+                        визуального оформления.</li>
+                    <li class="development__scroll--item">Создаём адаптированный дизайн.
+                        При отсутствии стиля разрабатываем визуальную айдентику, включая цвета.</li>
+                    <li class="development__scroll--item">Переводим дизайн в валидный код. Обеспечиваем корректное
+                        отображение на всех устройствах.</li>
+                </ul>
+            </div>
+
+            <div class="development__form grid grid--template-2">
+                <div class="development__form--container">
+                    <div class="development__form--preview">
+                        <h3 class="development__form--title h2">Воплощаем идеи
+                            в цифровые решения</h3>
+                        <p class="development__form--description">
+                            Есть идея? Мы реализуем всё быстро и качественно. Ведем проект от набросков до запуска,
+                            работая прозрачно. Разбираемся в задаче и доводим до результата. Создаём важное для вас. Мы
+                            — партнёры, а не исполнители.
+                        </p>
+                    </div>
+                </div>
+                <div class="development__form--container-2">
+                    <h4 class="development__form--title-2">
+                        Заполните заявку
+                    </h4>
+                    <form action="/" class="feedback-form">
+                        <div class="feedback-form__cell field">
+                            <label for="firstName" class="field__label">Имя<span class="field__required-star"
+                                    aria-hidden="true">*</span></label>
+                            <input class="field__control" id="firstName" placeholder="Павел" required>
+                        </div>
+                        <div class="feedback-form__cell field">
+                            <label for="lastName" class="field__label">Контактные данные</label>
+                            <input class="field__control" id="lastName" placeholder="Почта/телеграмм">
+                        </div>
+                        <div class="feedback-form__cell field">
+                            <label for="message" class="field__label">Тема сообщения<span class="field__required-star"
+                                    aria-hidden="true">*</span></label>
+                            <input class="field__control" id="message" placeholder="Введите текст" required type="text">
+                        </div>
+                        <div class="feedback-form__cell field">
+                            <label class="field__label" for="category">Категория</label>
+                            <input type="text" class="field__control" id="category" placeholder="Не выбрано" />
+                            <ul class="city-dropdown__list"></ul>
+                        </div>
+                        <div class="feedback-form__cell feedback-form__cell--wide field">
+                            <label for="message-big" class="field__label">Сообщение<span class="field__required-star"
+                                    aria-hidden="true">*</span></label>
+                            <textarea class="field__control" id="message-big"
+                                placeholder="Коротко опишите ваш проект..." required></textarea>
+                        </div>
+                    </form>
+                    <button class="development__form--button button button--accent" type="submit">Отправить
+                        заявку</button>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="section" aria-labelledby="price-title">
+        <div class="section__subtitle">
+            <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
+            <p class="section__subtitle--text">ПРАЙС</p>
+        </div>
+        <h2 class="section__title h2" id="price-title">ПРОЗРАЧНЫЕ <span class="section__title--accent">ЦЕНОВЫЕ</span>
+            ПРЕДЛОЖЕНИЯ
+        </h2>
+        <div class="price">
+        <div class="price__buttons">
+            <button class="price__buttons--button button button--transparent is-active" type="button"
+                aria-label="Кнопка">Услуги</button>
+            <button class="price__buttons--button button button--transparent" type="button" aria-label="Кнопка">Сайт по
+                ключ</button>
+            <button class="price__buttons--button button button--transparent" type="button"
+                aria-label="Кнопка">Обслуживание</button>
+        </div>
+
+        <div class="price grid grid--template-3 container">
+            <div class="price__card">
+                <div class="price__card--container">
+                    <h3 class="price__card--title h3">Лендинг</h3>
+                    <div class="price__card--price">
+                        от <span class="price__card--number">30 000 ₽ /</span> <span class="price__card--days">5-7
+                            дней</span>
+                    </div>
+                    <button class="price__card--button button button--dark" type="button" aria-label="Кнопка">
+                        Заказать
+                    </button>
+                </div>
+                <div class="price__card--line"></div>
+                <ul class="price__card--list">
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">Дизайн макета</p>
+                    </li>
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">Адаптивная верстка</p>
+                    </li>
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">Форма обратной связи</p>
+                    </li>
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">SEO-оптимизация</p>
+                    </li>
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">Настройка аналитики</p>
+                    </li>
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">Оптимизация скорости загрузки</p>
+                    </li>
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">Подключение домена и хостинга</p>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="price__card">
+                <div class="price__card--container">
+                    <h3 class="price__card--title h3">Сайт-визитка</h3>
+                    <div class="price__card--price">
+                        от <span class="price__card--number">25 000 ₽ /</span> <span class="price__card--days">7-10
+                            дней</span>
+                    </div>
+                    <button class="price__card--button button button--dark" type="button" aria-label="Кнопка">
+                        Заказать
+                    </button>
+                </div>
+
+                <div class="price__card--line"></div>
+
+                <ul class="price__card--list">
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">Структура из нескольких страниц</p>
+                    </li>
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">Адаптивная верстка</p>
+                    </li>
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">Интерактивные элементы</p>
+                    </li>
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">CMS для редактирования</p>
+                    </li>
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">SEO-настройка</p>
+                    </li>
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">Интеграция с мессенджерами</p>
+                    </li>
+                    <li class="price__card--item">
+                        <div class="price__card--icon">
+                            <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                fill="none" customFrame="#000000">
+                                <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                    stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <p class="possibilities__card--item-text">Подключение домена и хостинга</p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="price__card--mark">
+                <h3 class="price__card--mark-title">Популярно сейчас</h3>
+                <div class="price__card--mark__card-alt">
+                    <div class="price__card--container">
+                        <h3 class="price__card--title h3">Корпоративный сайт</h3>
+                        <div class="price__card--price">
+                            от <span class="price__card--number">50 000 ₽ /</span> <span class="price__card--days">14-20
+                                дней</span>
+                        </div>
+                        <button class="price__card--button button button--accent" type="button" aria-label="Кнопка">
+                            Заказать
+                        </button>
+                    </div>
+                    <div class="price__card--line"></div>
+                    <ul class="price__card--list">
+                        <li class="price__card--item">
+                            <div class="price__card--icon">
+                                <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                        stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <p class="possibilities__card--item-text">Многостраничная структура</p>
+                        </li>
+                        <li class="price__card--item">
+                            <div class="price__card--icon">
+                                <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                        stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <p class="possibilities__card--item-text">Адаптивная верстка</p>
+                        </li>
+                        <li class="price__card--item">
+                            <div class="price__card--icon">
+                                <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                        stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <p class="possibilities__card--item-text">Форма обратной связи</p>
+                        </li>
+                        <li class="price__card--item">
+                            <div class="price__card--icon">
+                                <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                        stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <p class="possibilities__card--item-text">SEO-оптимизация</p>
+                        </li>
+                        <li class="price__card--item">
+                            <div class="price__card--icon">
+                                <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                        stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <p class="possibilities__card--item-text">Настройка аналитики</p>
+                        </li>
+                        <li class="price__card--item">
+                            <div class="price__card--icon">
+                                <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                        stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <p class="possibilities__card--item-text">Оптимизация скорости загрузки</p>
+                        </li>
+                        <li class="price__card--item">
+                            <div class="price__card--icon">
+                                <svg viewBox="0 0 10.395 8.21484" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="10.394981" height="8.214844"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Vector 2" d="M0.753059 4.02566L3.91355 7.4196L9.64195 0.75293"
+                                        stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <p class="possibilities__card--item-text">Настройка аналитики</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="task__arrow-buttons">
+            <button class="task__arrow-buttons--button button button--arrow-button-grey-dark" type="button"
+                aria-label="Кнопка">
+                <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="18.000000" height="18.000000" fill="none">
+                    <path id="Vector" d="M0 0L16.1719 0" stroke="rgb(255,255,255)" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        transform="matrix(-1,-8.74228e-08,8.74228e-08,-1,17.0859,9)" />
+                    <path id="Vector" d="M0 15.0937L7.54688 7.54687L0 0" fill-rule="nonzero" stroke="rgb(255,255,255)"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        transform="matrix(-1,-8.74228e-08,8.74228e-08,-1,8.46094,16.5469)" />
+                </svg>
+            </button>
+            <button class="task__arrow-buttons--button button button--arrow-button-grey" type="button"
+                aria-label="Кнопка">
+                <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="18.000000" height="18.000000" fill="none">
+                    <path id="Vector" d="M0.914062 9L17.0859 9" stroke="rgb(42,42,42)" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" />
+                    <path id="Vector" d="M9.53906 16.5469L17.0859 9L9.53906 1.45312" fill-rule="nonzero"
+                        stroke="rgb(42,42,42)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </svg>
+            </button>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="section" aria-labelledby="launch-title">
+        <div class="section__subtitle">
+            <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
+            <p class="section__subtitle--text">ЗАПУСК MVP</p>
+        </div>
+        <h2 class="section__title h2" id="launch-title">СОБИРАЕМ <span class="section__title--accent">MVP</span> С
+            ИНФРОСТРУКТУРОЙ,<br>
+            ЧТОБЫ <span class="section__title--accent">ТЕСТИРОВАТЬ</span>ИДЕЮ
+        </h2>
+
+        <div class="launch container">
+            <div class="launch__tab-buttons">
+                <button class="launch__tab-buttons--button button button--transparent" type="button"
+                    aria-label="Кнопка">Инфраструктура и управление</button>
+                <button class="launch__tab-buttons--button button button--transparent" type="button"
+                    aria-label="Кнопка">Интеграция и аналитика</button>
+            </div>
+            <div class="launch__cards grid grid--template-2">
+                <div class="launch__cards--card-1">
+                    <img src="./assets/icons/launch-section/star-grey.svg" alt=""
+                        class="launch__cards--card-1__img-back">
+                    <img src="./assets/icons/launch-section/Ellipse 1.png" alt=""
+                        class="launch__cards--card-1__img-middle">
+                    <img src="./assets/images/older-man-launch.png" alt="" class="launch__cards--card-1__img-front">
+                </div>
+
+                <div class="launch__cards--card-2">
+                    <ul class="launch__cards--card-2__list">
+                        <li class="launch__cards--card-2__list--item">
+                            <h3 class="launch__cards--card-2__list--item-title h3">
+                                <img class="launch__cards--card-2__list--item-icon"
+                                    src="./assets/icons/launch-section/icon-1.svg" alt="" width="40" height="40">
+                                Настройка CI/CD
+                            </h3>
+                            <p class="launch__cards--card-2__list--item-text">
+                                Автоматизируем сборку и публикацию проекта: код проходит тесты и выкатывается на сервер
+                                быстро.
+                            </p>
+                        </li>
+                        <li class="launch__cards--card-2__list--item">
+                            <h3 class="launch__cards--card-2__list--item-title h3">
+                                <img class="launch__cards--card-2__list--item-icon"
+                                    src="./assets/icons/launch-section/icon-2.svg" alt="" width="40" height="40">
+                                Сборка проекта в Docker + Swarm
+                            </h3>
+                            <p class="launch__cards--card-2__list--item-text">
+                                Упаковываем проект в контейнеры для стабильной работы на серверах. Swarm позволяет
+                                управлять сервисами легко.
+                            </p>
+                        </li>
+                        <li class="launch__cards--card-2__list--item">
+                            <h3 class="launch__cards--card-2__list--item-title h3">
+                                <img class="launch__cards--card-2__list--item-icon"
+                                    src="./assets/icons/launch-section/icon-3.svg" alt="" width="40" height="40">
+                                Панель управления на FilamentPHP
+                            </h3>
+                            <p class="launch__cards--card-2__list--item-text">
+                                Удобная админка для управления контентом, пользователями и заказами.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section tools" aria-labelledby="tools-title">
+        <div class="tools__video-background">
+            <video class="tools__video-background--bg" autoplay muted loop playsinline>
+                <source src="/assets/video/bubles.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="tools__content container">
+            <div class="section section__alt--container">
+                <div class="section section__alt--title">
+                    <div class="section__subtitle--alt">
+                        <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
+                        <p class="section__subtitle--text">ИНСТРУМЕНТЫ</p>
+                    </div>
+                    <h2 class="section__title--alt h2" id="tools-title">МЫ ИСПОЛЬЗУЕМ<span
+                            class="section__title--accent">ТЕХНОЛОГИИ</span><br>
+                        ДЛЯ <span class="section__title--accent">УДОБНОГО</span> САЙТА
+                    </h2>
+                </div>
+                <div class="section__alt--description"></div>
+            </div>
+
+            <div class="tools__cards">
+                <ul class="tools__cards--list">
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/html.svg" alt="">
+                        <span class="tools__cards--description">HTML</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/jquery.svg" alt="">
+                        <span class="tools__cards--description">jQuery</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/sass.svg" alt="">
+                        <span class="tools__cards--description">SASS</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/js.svg" alt="">
+                        <span class="tools__cards--description">JavaScript</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/nuts.svg" alt="">
+                        <span class="tools__cards--description">Node.js</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/mysql.svg" alt="">
+                        <span class="tools__cards--description">MySQL</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/laravel.svg" alt="">
+                        <span class="tools__cards--description">Laravel</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/figma.svg" alt="">
+                        <span class="tools__cards--description">Figma</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/pin.svg" alt="">
+                        <span class="tools__cards--description">Pinecone</span>
+                    </li>
+                </ul>
+                <ul class="tools__cards--list">
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/mongo.svg" alt="">
+                        <span class="tools__cards--description">MongoDB</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/react.svg" alt="">
+                        <span class="tools__cards--description">React</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/docer.svg" alt="">
+                        <span class="tools__cards--description">Docker</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/python.svg" alt="">
+                        <span class="tools__cards--description">Python</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/redis.svg" alt="">
+                        <span class="tools__cards--description">Redis</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/m.svg" alt="">
+                        <span class="tools__cards--description">Mochawe <br> some</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/php.svg" alt="">
+                        <span class="tools__cards--description">PHPUnit</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/css.svg" alt="">
+                        <span class="tools__cards--description">CSS3</span>
+                    </li>
+                    <li class="tools__cards--item">
+                        <img class="tools__cards--img" src="./assets/icons/toosl-section/live.svg" alt="">
+                        <span class="tools__cards--description">Livewire</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" aria-labelledby="product-title">
+        <div class="section__subtitle">
+            <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
+            <p class="section__subtitle--text">ПРОЕКТЫ</p>
+        </div>
+        <h2 class="section__title h2" id="product-title">САЙТЫ, КОТОРЫЕ ПРИНОСЯТ <span
+                class="section__title--accent">ЗЕЗУЛЬТАТ</span>
+        </h2>
+
+        <div class="product container">
+            <ul 
+            class="task__list grid grid--template-columns-2-rows-2 borderid-grid bordered-grid--2-cols">
+                <li class=" product__item borderid-grid__item">
+                    <img src="./assets/images/section-product/Product Image 1.jpg" alt="banner-1"
+                        class="task__item--img product__item--img" width="780" height="460">
+
+                    <h4 class="product__item--title h4">Сайт кардиолога Сергея Жукова</h4>
+
+                    <p class="task__item--description product__item--description">Создать универсальную программу
+                        лояльности
+                        с простой интеграцией и геймификацией.</p>
+
+                </li>
+
+                <li class=" product__item borderid-grid__item">
+                    <img src="./assets/images/section-product/Product Image 2.jpg" alt="banner-1"
+                        class="task__item--img product__item--img" width="780" height="460">
+
+                    <h4 class=" product__item--title h4">Сайт кардиолога Сергея Жукова</h4>
+
+                    <p class="task__item--description  task__item--description">Создать универсальную программу
+                        лояльности
+                        с простой интеграцией и геймификацией.</p>
+
+                </li>
+
+                <li class=" product__item borderid-grid__item">
+                    <img src="./assets/images/section-product/Product Image 3.jpg" alt="banner-1"
+                        class="task__item--img product__item--img " width="780" height="460">
+
+                    <h4 class="product__item--title h4">Сайт кардиолога Сергея Жукова</h4>
+
+                    <p class="task__item--description task__item--description">Создать маркетплейс для размещения
+                        и продвижения контента с личным кабинетом, аналитикой и удобным интерфейсом для вебмастеров.</p>
+                </li>
+
+                <li class=" product__item borderid-grid__item">
+                    <img src="./assets/images/section-product/Product Image 4.jpg" alt="banner-1"
+                        class="task__item--img product__item--img" width="780" height="460">
+
+                    <h4 class="product__item--title h4">Сайт кардиолога Сергея Жукова</h4>
+
+                    <p class="task__item--description product__item--description">Создать маркетплейс для размещения
+                        и продвижения контента с личным кабинетом, аналитикой и удобным интерфейсом для вебмастеров.</p>
+
+                </li>
+            </ul>
+            <div class="product__button-center">
+                <button class="product__button button button--accent" type="button" aria-label="Кнопка">Все проекты
+                    <svg viewBox="0 0 33.9411 33.9412" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="33.941116" height="33.941162" fill="none">
+                        <path id="Vector" d="M0 0L21.5625 0" stroke="rgb(255,255,255)" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="3"
+                            transform="matrix(0.707107,-0.707107,0.707107,0.707107,9.34715,24.5941)" />
+                        <path id="Vector" d="M0 20.125L10.0625 10.0625L0 0" fill-rule="nonzero"
+                            stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                            transform="matrix(0.707107,-0.707107,0.707107,0.707107,10.3635,9.34705)" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section> 
+
+    <section class="section" aria-labelledby="reviews-title">
+        <div class="section section__alt--container container">
+            <div class="section section__alt--title">
+                <div class="section__subtitle--alt">
+                    <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
+                    <p class="section__subtitle--text">ОТЗЫВЫ</p>
+                </div>
+                <h2 class="section__title--alt h2" id="reviews-title">
+                    МЫ ИСПОЛЬЗУЕМ
+                    <span class="section__title--accent">ТЕХНОЛОГИИ</span>
+                    <br> ДЛЯ <span class="section__title--accent">УДОБНОГО</span>САЙТА
+                </h2>
+            </div>
+            <div class="section__alt--description">Находим подход к каждому заказчику и делаем <br> всё, чтобы результат
+                превзошёл ожидания.</div>
+        </div> 
+
+        <div class="reviews container">
+
+            <div class="reviews__wrapper">
+                <ul class="reviews__list reviews__list--full">
+                    <li class="reviews__list--item">
+                        <div class="reviews__list--item__text">
+                            <p>
+                                “Классный исполнитель, быстро помог внедрить сайт в приложение без лишних вопросов,
+                                человек знающий свое дело, приятно иметь дело с профессионалами своего дела! Спасибо,
+                                обратимся еще когда потребуется”
+                            </p>
+                        </div>
+
+                        <div class="reviews__list--item__container">
+                            <div class="reviews__list--item__author">
+                                <img src="./assets/icons/reviews-section/Reviewer Image.png" alt="photo"
+                                    class="reviews__list--item__img" width="67" height="67">
+                                <div class="reviews__list--item__body">
+                                    <p class="reviews__list--item__name">calm40</p>
+                                    <p class="reviews__list--item__department">Интеграция приложения</p>
+                                </div>
+                            </div>
+                            <div class="reviews__list--item__rating-view rating-view" aria-label="Rating 5 star"
+                                title="Rating 5 star">
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__list--item">
+                        <div class="reviews__list--item__text">
+                            <p>
+                                “Классный исполнитель, быстро помог внедрить сайт в приложение без лишних вопросов,
+                                человек знающий свое дело, приятно иметь дело с профессионалами своего дела! Спасибо,
+                                обратимся еще когда потребуется”
+                            </p>
+                        </div>
+
+                        <div class="reviews__list--item__container">
+                            <div class="reviews__list--item__author">
+                                <img src="./assets/icons/reviews-section/Reviewer Image.png" alt="photo"
+                                    class="reviews__list--item__img" width="67" height="67">
+                                <div class="reviews__list--item__body">
+                                    <p class="reviews__list--item__name">calm40</p>
+                                    <p class="reviews__list--item__department">Интеграция приложения</p>
+                                </div>
+                            </div>
+                            <div class="reviews__list--item__rating-view rating-view" aria-label="Rating 5 star"
+                                title="Rating 5 star">
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__list--item">
+                        <div class="reviews__list--item__text">
+                            <p>
+                                “Классный исполнитель, быстро помог внедрить сайт в приложение без лишних вопросов,
+                                человек знающий свое дело, приятно иметь дело с профессионалами своего дела! Спасибо,
+                                обратимся еще когда потребуется”
+                            </p>
+                        </div>
+
+                        <div class="reviews__list--item__container">
+                            <div class="reviews__list--item__author">
+                                <img src="./assets/icons/reviews-section/Reviewer Image.png" alt="photo"
+                                    class="reviews__list--item__img" width="67" height="67">
+                                <div class="reviews__list--item__body">
+                                    <p class="reviews__list--item__name">calm40</p>
+                                    <p class="reviews__list--item__department">Интеграция приложения</p>
+                                </div>
+                            </div>
+                            <div class="reviews__list--item__rating-view rating-view" aria-label="Rating 5 star"
+                                title="Rating 5 star">
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="reviews__list reviews__list--half">
+                    <li class="reviews__list--item">
+                        <div class="reviews__list--item__text">
+                            <p>
+                                “Классный исполнитель, быстро помог внедрить сайт в приложение без лишних вопросов,
+                                человек знающий свое дело, приятно иметь дело с профессионалами своего дела! Спасибо,
+                                обратимся еще когда потребуется”
+                            </p>
+                        </div>
+
+                        <div class="reviews__list--item__container">
+                            <div class="reviews__list--item__author">
+                                <img src="./assets/icons/reviews-section/Reviewer Image.png" alt="photo"
+                                    class="reviews__list--item__img" width="67" height="67">
+                                <div class="reviews__list--item__body">
+                                    <p class="reviews__list--item__name">calm40</p>
+                                    <p class="reviews__list--item__department">Интеграция приложения</p>
+                                </div>
+                            </div>
+                            <div class="reviews__list--item__rating-view rating-view" aria-label="Rating 5 star"
+                                title="Rating 5 star">
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__list--item">
+                        <div class="reviews__list--item__text">
+                            <p>
+                                “Классный исполнитель, быстро помог внедрить сайт в приложение без лишних вопросов,
+                                человек знающий свое дело, приятно иметь дело с профессионалами своего дела! Спасибо,
+                                обратимся еще когда потребуется”
+                            </p>
+                        </div>
+
+                        <div class="reviews__list--item__container">
+                            <div class="reviews__list--item__author">
+                                <img src="./assets/icons/reviews-section/Reviewer Image.png" alt="photo"
+                                    class="reviews__list--item__img" width="67" height="67">
+                                <div class="reviews__list--item__body">
+                                    <p class="reviews__list--item__name">calm40</p>
+                                    <p class="reviews__list--item__department">Интеграция приложения</p>
+                                </div>
+                            </div>
+                            <div class="reviews__list--item__rating-view rating-view" aria-label="Rating 5 star"
+                                title="Rating 5 star">
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__list--item">
+                        <div class="reviews__list--item__text">
+                            <p>
+                                “Классный исполнитель, быстро помог внедрить сайт в приложение без лишних вопросов,
+                                человек знающий свое дело, приятно иметь дело с профессионалами своего дела! Спасибо,
+                                обратимся еще когда потребуется”
+                            </p>
+                        </div>
+
+                        <div class="reviews__list--item__container">
+                            <div class="reviews__list--item__author">
+                                <img src="./assets/icons/reviews-section/Reviewer Image.png" alt="photo"
+                                    class="reviews__list--item__img" width="67" height="67">
+                                <div class="reviews__list--item__body">
+                                    <p class="reviews__list--item__name">calm40</p>
+                                    <p class="reviews__list--item__department">Интеграция приложения</p>
+                                </div>
+                            </div>
+                            <div class="reviews__list--item__rating-view rating-view" aria-label="Rating 5 star"
+                                title="Rating 5 star">
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__list--item">
+                        <div class="reviews__list--item__text">
+                            <p>
+                                “Классный исполнитель, быстро помог внедрить сайт в приложение без лишних вопросов,
+                                человек знающий свое дело, приятно иметь дело с профессионалами своего дела! Спасибо,
+                                обратимся еще когда потребуется”
+                            </p>
+                        </div>
+
+                        <div class="reviews__list--item__container">
+                            <div class="reviews__list--item__author">
+                                <img src="./assets/icons/reviews-section/Reviewer Image.png" alt="photo"
+                                    class="reviews__list--item__img" width="67" height="67">
+                                <div class="reviews__list--item__body">
+                                    <p class="reviews__list--item__name">calm40</p>
+                                    <p class="reviews__list--item__department">Интеграция приложения</p>
+                                </div>
+                            </div>
+                            <div class="reviews__list--item__rating-view rating-view" aria-label="Rating 5 star"
+                                title="Rating 5 star">
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                                <div class="rating-view__star is-active"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="reviews__buttons">
+                <h3 class="reviews__buttons--title h4">Опыт в разных сферах</h3>
+
+                <div class="reviews__buttons-group">
+                    <button class="reviews__buttons-group--button button button--dark" type="button"
+                        aria-label="кнопка">Розничная торговля</button>
+                    <button class="reviews__buttons-group--button button button--dark" type="button"
+                        aria-label="кнопка">Услуги</button>
+                    <button class="reviews__buttons-group--button button button--dark" type="button"
+                        aria-label="кнопка">Образование</button>
+                    <button class="reviews__buttons-group--button button button--dark" type="button"
+                        aria-label="кнопка">Медицина</button>
+                    <button class="reviews__buttons-group--button button button--dark" type="button"
+                        aria-label="кнопка">Строительство</button>
+                    <button class="reviews__buttons-group--button button button--dark" type="button"
+                        aria-label="кнопка">Туризм</button>
+                </div>
+            </div>
+
+            <div class="reviews__form">
+                <h4 class="reviews__form--title h2">Хотите сайт, который будет <br> приносить клиентов?</h4>
+                <p class="reviews__form--subtitle">Оставьте заявку, и мы свяжемся с вами в течение 15 минут.</p>
+                <label for="telephone" class="visually-hidden">Введите телефон</label>
+                <input class="reviews__form--input button button--dark" id="telephone" type="number"
+                    placeholder="+7 _ _ _ _ _ _ _ _ _">
+                <button class="reviews__form--button button button-transparent" type="submit">Отправить заявку в 1
+                    клик</button>
+            </div>
+        </div>
+    </section> 
+
+    <section class="section" aria-labelledby="questions-title">
+        <div class="section section__alt--container container">
+            <div class="section section__alt--title">
+                <div class="section__subtitle--alt">
+                    <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
+                    <p class="section__subtitle--text">ВОПРОСЫ</p>
+                </div>
+                <h2 class="section__title--alt h2" id="questions-title"><span class="section__title--accent">БИЗНЕСС
+                        ИНСТРУМЕНТ</span>
+                    ТРЕБУЕТ УЧЁТА <br> МНОГИХ ФАКТОРОВ.
+                </h2>
+            </div>
+            <div class="section__alt--description"></div>
+        </div>
+
+        <div class="questions container">
+            <div class="questions__accordion">
+                <ul class="questions__accordion--list">
+                    <li class="questions__accordion--item">
+                        <details class="questions__accordion--accordion" open>
+                            <summary class="questions__accordion--accordion-header">
+                                <h3 class="questions__accordion--accordion-title">Сколько стоит создать сайт под ключ?
+                                </h3>
+                                <span class="questions__accordion--accordion-indication"></span>
+                            </summary>
+                            <div class="questions__accordion--accordion-body">
+                                <p>Выражаем благодарность за создание приложения для зарубежной студии красоты,
+                                    внимательный и добросовестный разработчик который всё время был на связи и помогал
+                                    советами как сделать лучше, обратимся обязательно еще раз!
+                                </p>
+                            </div>
+
+                        </details>
+                    </li>
+
+                    <li class="questions__accordion--item">
+                        <details class="questions__accordion--accordion">
+                            <summary class="questions__accordion--accordion-header">
+                                <h3 class="questions__accordion--accordion-title">Какие типы сайтов вы разрабатываете?
+                                </h3>
+                                <span class="questions__accordion--accordion-indication"></span>
+                            </summary>
+                            <div class="questions__accordion--accordion-body">
+                                <p>
+                                </p>
+                            </div>
+
+                        </details>
+                    </li>
+                    <li class="questions__accordion--item">
+                        <details class="questions__accordion--accordion">
+                            <summary class="questions__accordion--accordion-header">
+                                <h3 class="questions__accordion--accordion-title">Что входит в разработку сайта?</h3>
+                                <span class="questions__accordion--accordion-indication"></span>
+                            </summary>
+                            <div class="questions__accordion--accordion-body">
+                                <p>
+                                </p>
+                            </div>
+
+                        </details>
+                    </li>
+                    <li class="questions__accordion--item">
+                        <details class="questions__accordion--accordion">
+                            <summary class="questions__accordion--accordion-header">
+                                <h3 class="questions__accordion--accordion-title">Сколько стоит разработка mini apps для
+                                    Telegram?</h3>
+                                <span class="questions__accordion--accordion-indication"></span>
+                            </summary>
+                            <div class="questions__accordion--accordion-body">
+                                <p>
+                                </p>
+                            </div>
+
+                        </details>
+                    </li>
+                    <li class="questions__accordion--item">
+                        <details class="questions__accordion--accordion">
+                            <summary class="questions__accordion--accordion-header">
+                                <h3 class="questions__accordion--accordion-title">Предоставляете ли вы SEO и
+                                    продвижение?</h3>
+                                <span class="questions__accordion--accordion-indication"></span>
+                            </summary>
+                            <div class="questions__accordion--accordion-body">
+                                <p>
+                                </p>
+                            </div>
+
+                        </details>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="questions__block">
+                <h4 class="questions__block--title">Не нашли ответ на ваш вопрос?</h4>
+                <p class="questions__block--text">Вы можете написать нам по электронной почте, и наш менеджер ответит на
+                    все ваши вопросы:</p>
+                <button class="questions__block--button button button--accent">Все проекты
+                    <img src="./assets/icons/questions-section/solar_copy-bold.svg" alt="" width="24" height="24"
+                        class="questions__block--icon">
+                </button>
+            </div>
+        </div>
+
+
+
+    </section>
+</body>
+
+</html>

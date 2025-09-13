@@ -1,0 +1,152 @@
+@use '../helpers' as *;
+
+.reviews {
+    margin-top: fluid(80, 40);
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: rem(20);
+        position: relative; /* чтобы градиенты позиционировались относительно контейнера */
+        overflow-x: auto;
+        //padding: 0 50px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+         /* скрываем полосу скролла */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE/Edge */
+
+        &::-webkit-scrollbar {
+            display: none; /* Chrome, Safari */
+        }
+
+  /* псевдоэлементы для градиентов */
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 50px; /* ширина градиента */
+            height: 100%;
+            pointer-events: none; /* чтобы скролл работал, не перекрывался */
+            z-index: 5; /* поверх карточек */
+        }
+
+        &::before {
+            left: 0;
+            background: linear-gradient(to right, var(--color-dark) 0%, transparent 100%);
+        }
+
+        &::after {
+            right: 0;
+            background: linear-gradient(to left, var(--color-dark) 0%, transparent 100%);
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: rem(20);
+        
+    
+
+        &--item {
+            background-color: var(--color-dark);
+            border-radius: rem(32);
+            width: 600px;
+            flex-shrink: 0;
+            
+
+            &__text {
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: rem(32);
+                padding: fluid(28, 20);
+            }
+
+            &__container {
+                display: flex;
+                justify-content: space-between;
+                padding: fluid(28, 20);
+            }
+            &__author {
+                display: flex;
+                gap: fluid(28, 10);
+            }
+        }
+
+    }
+
+    &__buttons {
+        position: relative;
+        margin-top: fluid(80, 40);
+        margin-bottom: fluid(180, 50);
+        &--title {
+            position: absolute;
+            top: -10%;
+            left: 35%;
+            padding-inline: fluid(60, 30) ;
+            background-color: var(--color-black);
+        }
+    }
+    &__buttons-group {
+        border-top: 1px dashed var(--color-accent);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-top: fluid(80, 40);
+
+        
+
+        &--button {
+            padding-block: fluid(24, 15);
+            padding-inline: fluid(50, 25);
+        }
+    }
+
+    &__form {
+        @include flex-center;
+        flex-direction: column;
+        padding-block: fluid(100, 50);
+        width: 100%;
+        background:radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100% ), url(/assets/images/oringe.jpg) ;
+        background-size: cover;       /* картинка растягивается на весь контейнер */
+        background-position: center;  /* центрирует картинку */
+        background-repeat: no-repeat; /* чтобы не повторялась */
+
+        &--title {
+            text-align: center;
+            margin-bottom: rem(24);
+        }
+
+        &--input {
+            margin-block: fluid(40, 20);
+            padding-block: fluid(24, 10);
+            padding-inline: fluid(32, 20);
+            box-sizing: border-box;
+            
+
+            &::placeholder {
+                @include fluid-text(18, 15);
+                text-align: start;
+                
+            }
+        }
+
+        &--button {
+            color: var(--color-light);
+            border: var(--border);
+            padding: fluid(24, 20) fluid(40, 20);
+        }
+    }
+}
+
+.reviews__list--full {
+    justify-content: center;
+    overflow: visible;
+
+}
+
+.reviews__list--half {
+    flex-wrap: nowrap;
+    scroll-snap-align: start;
+
+}

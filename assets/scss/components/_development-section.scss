@@ -1,0 +1,88 @@
+@use '../helpers' as *;
+
+.development {
+    &__scroll {
+        overflow: hidden;
+        position: relative;
+        &--arrow-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: fluid(80, 40);
+        }
+
+        &--list {
+            display: grid; // <--- ОБЯЗАТЕЛЬНО!
+            grid-template-columns: repeat(4, auto); // твой grid
+            column-gap: fluid(60, 40);
+            padding-top: rem(44);
+            margin-top: fluid(48, 20);
+            border-top: rem(6) solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.4s ease; // плавный сдвиг
+            will-change: transform;
+        }
+
+        &--item {
+            position: relative;
+            color: rgba(255, 255, 255, 0.3);
+            transition: color 0.3s ease;
+
+            &::before {
+                content: '';
+                width: rem(18);
+                height: rem(18);
+                border-radius: 50%;
+                background-color: rgba(65, 65, 65, 1);
+                position: absolute;
+                top: rem(-57);
+                left: 0;
+                transition: background-color 0.3s ease;
+            }
+
+                &.active {
+                    color: var(--color-light);
+
+                &::before {
+                    background-color: var(--color-accent);
+                }
+            }
+        }
+    }
+
+    &__form {
+        margin-top: fluid(180, 100);
+        padding: rem(28);
+        width: 100%;
+        background: linear-gradient(270.00deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 1) 100%),
+        url(/assets/images/form-backgraund-copy.jpg) ;
+        background-size: cover;       /* картинка растягивается на весь контейнер */
+        background-position: center;  /* центрирует картинку */
+        background-repeat: no-repeat; /* чтобы не повторялась */
+        &--button {
+            margin: 0 auto;
+            width: fluid(282, 180);
+            height: rem(24);
+            margin-top: fluid(40, 20);
+            padding-block: rem(24);
+            padding-inline: fluid(40, 20);
+        }
+
+        &--container {
+            display: flex;
+            flex-direction: column;
+            column-gap: fluid(24, 10);
+            justify-content: center;
+        }
+        &--container-2 {
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(78, 34, 7, 1);
+            padding: fluid(40, 20);
+        }
+
+        &--title-2 {
+            font-size: fluid(32, 20);
+            font-weight: 800;
+            color: var(--color-light);
+            text-align: center;
+        }
+    }
+}

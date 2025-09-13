@@ -1,0 +1,27 @@
+@use './base/normalize';
+@use './base/fonts';
+@use './base/variables';
+@use './base/utils';
+@use './base/globals';
+@use './base/grid';
+@use './base/bordered-grid';
+
+@use './components/header';
+@use './components/burger-button';
+@use './components/button';
+@use './components/dropDown';
+@use './components/hero-section';
+@use './components/section';
+@use './components/task';
+@use './components/product-section';
+@use './components/stages-section';
+@use './components/possibilities-section';
+@use './components/price-section';
+@use './components/development-section';
+@use './components/feedback-form';
+@use './components/field';
+@use './components/tools-section';
+@use './components/questions-section';
+@use './components/launch-section';
+@use './components/reviews-section';
+@use './components/rating-view';

@@ -1,0 +1,122 @@
+@use '../helpers' as *;
+
+.price {
+
+    &__card {
+        max-width: rem(611);
+        display: flex;
+        flex-direction: column;
+        border-radius: rem(32);
+        gap: fluid(80, 20);
+        height: fluid(764, 600);
+        padding: fluid(60, 20);
+        background-color: rgba(255, 245, 235, 0.05);
+
+        &--container {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &--price {
+            display: flex;
+            align-items: center;
+            gap: rem(5);
+            margin-top: rem(24);
+            margin-bottom: fluid(40, 24);
+        }
+
+        &--days {
+            color: var(--color-grey-dark);
+            font-size: fluid(18, 12);
+        }
+        &--button {
+            box-sizing: border-box;
+            width: 100%;
+            height: rem(72);
+        }
+
+        &--line {
+            width: fluid(250, 200);
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 auto;
+        }
+
+        &--list {
+            display: flex;
+            flex-direction: column;
+            gap: fluid(26, 20);
+        }
+
+        &--item{
+            display: flex;
+            align-items: center;
+            gap: rem(14);
+        }
+
+        &--icon {
+            border-radius: 50%;
+            width: rem(20);
+            height: rem(20);
+            background-color: var(--color-accent);
+            @include flex-center;
+            flex-shrink: 0;
+
+        }
+
+        &--mark {
+        background-color: var(--color-accent);
+        border-radius: rem(32);
+        text-align: center;
+        
+        &-title {
+            padding-top: rem(16);
+        }
+        
+            &__card-alt {
+            max-width: rem(611);
+        display: flex;
+        flex-direction: column;
+        border-radius: rem(32);
+        gap: fluid(80, 40);
+        height: fluid(764, 674);
+        padding: fluid(60, 30);
+        background-color: var(--color-dark);
+
+        
+        }
+    
+    }
+
+        
+
+        
+    }
+
+    &__buttons {
+        @include flex-center;
+        height: rem(72);
+        margin-block: fluid(80, 40);
+
+        @include mobile {
+            
+        }
+
+        &--button {
+            height: 100%;
+            border: none;
+            padding-block: rem(24);
+            width: fluid(264, 150);
+
+            @include hover {
+                background-color: var(--color-accent);
+            }
+
+            &.is-active {
+                background-color: var(--color-accent);
+            }
+        }
+    }
+
+}   

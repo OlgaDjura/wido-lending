@@ -1,0 +1,39 @@
+@use '../helpers' as *;
+
+.possibilities {
+    &__card {
+        display: flex;
+        flex-direction: column;
+        border-radius: rem(32);
+        padding: rem(28);
+        background-color: rgba(255, 255, 255, 0.05);
+
+        &--container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &--button {
+                width: fluid(170, 150);
+                height: rem(72);
+                border: none;
+                background-color: var(--color-dark);
+            }
+
+        &--list {
+            margin-top: fluid(40, 30);
+            display: flex;
+            flex-direction: column;
+            gap: rem(16);
+        }
+
+        &--item {
+            display: flex;
+            gap: rem(16);
+
+            
+        }
+    }
+
+    
+}
