@@ -105,12 +105,10 @@
 
             flex-shrink: 0;
             position: relative;
-            background-color: var(--color-dark);
+            background-color: var(--color-grey-dark);
             border-radius: 50%;
-
-            @include mobile {
-                width: 30px;
-            }
+            width: fluid(50, 30);
+            height: fluid(50, 30);
 
             &::before, &::after {
                 @include abs-center;

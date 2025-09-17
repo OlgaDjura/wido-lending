@@ -1,5 +1,5 @@
 @use '../helpers' as *;
-
+$card-width: rem(200);
 .tools {
     position: relative;
     overflow: hidden;
@@ -30,22 +30,43 @@
         grid-template-rows: repeat(2, 1fr);
         gap: rem(20);
         margin-top: fluid(80, 40);
-        overflow: hidden;
+        overflow-x: auto;
+        
+        &--wrapper {
+            overflow-x: auto;
+            scroll-snap-type: x mandatory; /* чтобы карточки прилипали */
+            -webkit-overflow-scrolling: touch;
+        }
 
         &--list {
             display: flex;
             column-gap: rem(20);
+            flex-wrap: nowrap;
+            padding: 0 rem(40);
+            width: max-content;
         }
 
         &--item {
             @include flex-center;
-            width: fluid(200, 100);
-            height: fluid(200, 100);
+            width: $card-width;
+            height: fluid(200, 150);
             padding: fluid(24, 15) fluid(50, 30);
             border-radius: rem(32);
             background-color: var(--color-dark);
-            box-shadow: inset 0px 4px 19px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),   /* тень внутрь */
+                        inset -4px -4px 8px rgba(250, 250, 250, 0.05); /* свет сверху */
+            scroll-snap-align: center;
+            flex: 0 0 $card-width;
+            box-sizing: border-box;
 
         }
     }
+}
+
+.tools__cards--wrapper:nth-of-type(2) .tools__cards--list {
+    margin-left: calc(#{$card-width} / 2 * -1) ;
+}
+
+.tools__cards--wrapper::-webkit-scrollbar {
+    display: none;
 }

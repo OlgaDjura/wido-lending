@@ -1,7 +1,7 @@
 @use '../helpers' as *;
 
 .price {
-
+    
     &__card {
         max-width: rem(611);
         display: flex;
@@ -87,11 +87,7 @@
         
         }
     
-    }
-
-        
-
-        
+    }      
     }
 
     &__buttons {
@@ -100,13 +96,14 @@
         margin-block: fluid(80, 40);
 
         @include mobile {
-            
+            flex-direction: column;
+            height: auto;
         }
 
         &--button {
             height: 100%;
             border: none;
-            padding-block: rem(24);
+            padding-block: fluid(24, 15);
             width: fluid(264, 150);
 
             @include hover {

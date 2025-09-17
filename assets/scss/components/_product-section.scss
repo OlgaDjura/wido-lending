@@ -8,8 +8,7 @@
         gap: fluid(40, 30);
         padding: fluid(80, 40);
         background-color: transparent;
-        border-right: var(--border-alt);
-        border-block: var(--border-alt);
+        border-block: fluid(32, 20);
     }
 
     &__button-center {
@@ -17,12 +16,13 @@
     }
 
     &__button {
+        @include fluid-text(22, 15);
         display: flex;
         gap: rem(5);
         padding-bottom: rem(24);
         padding-inline: rem(40);
         width: fluid(264, 200);
-        height: fluid(76, 66);
+        height: fluid(76, 50);
         margin-top: fluid(40, 30);
 
         & svg {

@@ -8,16 +8,12 @@
         grid-template-columns: repeat(2, 1fr);
         gap: rem(20);
 
-        @include tablet {
-            
-            max-width: rem(800);
-            
-        }
+        
 
         @include mobile {
             max-width: rem(500);
             grid-template-columns: 1fr;
-            margin-inline: rem(80);
+            justify-content: center;
         }
     }
 
@@ -36,7 +32,7 @@
         @include mobile {
             grid-template-columns: repeat(1, 1fr);
             max-width: rem(500);
-            margin-inline: rem(80);
+            justify-content: center;
             
         }
     }

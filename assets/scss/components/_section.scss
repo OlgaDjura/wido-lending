@@ -59,4 +59,9 @@
             margin-bottom: rem(24);
         }
     }
+
+    &__task {
+        padding: 0;
+        padding-top: fluid(150, 50);
+    }
 }

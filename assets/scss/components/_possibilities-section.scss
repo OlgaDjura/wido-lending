@@ -11,11 +11,15 @@
         &--container {
             display: flex;
             justify-content: space-between;
+
+            @include mobile {
+                margin-bottom: rem(10);
+            }
         }
 
         &--button {
-                width: fluid(170, 150);
-                height: rem(72);
+                width: fluid(170, 100);
+                height: fluid(72, 20);
                 border: none;
                 background-color: var(--color-dark);
             }
@@ -31,7 +35,9 @@
             display: flex;
             gap: rem(16);
 
-            
+            @include hover {
+                transform: scale(1.02);
+            }
         }
     }
 

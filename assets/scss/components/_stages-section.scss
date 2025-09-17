@@ -17,15 +17,21 @@
             padding: fluid(28, 20);
 
             &__title {
+                @include fluid-text(24, 12);
                 display: flex;
                 gap: rem(5);
+            }
+
+            &__icon {
+                width: fluid(28, 10);
+                height: fluid(28, 10);
             }
 
             &__button {
             background-color: transparent;
             border: none;
-            width: rem(50);
-            height: rem(50);
+            width: fluid(50, 20);
+            height: fluid(50, 20);
 
             &:hover {
                 border-radius: rem(10);
@@ -33,8 +39,8 @@
             }
 
             & svg {
-                width: rem(40);
-                height: rem(40);
+                width: fluid(40, 20);
+                height: fluid(40, 20);
             }
         }
         }
@@ -44,10 +50,20 @@
 }
 
 .margin {
-    margin-top: fluid(43, 33);
+    margin-top: fluid(43, 5);
 }
 
 .margin-2 {
     margin-top: rem(10);
+}
+
+.stages--wrapper {
+    box-sizing: border-box;
+    padding-inline: fluid(20, 10);
+    border: 1px solid rgba(110, 108, 108, 0.2); /* лёгкая рамка */
+    border-radius: rem(32);
+  backdrop-filter: blur(20px); /* размытие фона за карточкой */
+  -webkit-backdrop-filter: blur(10px); /* для Safari */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* мягкая тень */
 }
 

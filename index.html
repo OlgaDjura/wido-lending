@@ -65,6 +65,7 @@
         </div>
     </header>
 
+    <main>
     <section class="hero" aria-labelledby="hero__title">
         <div class="hero__video-background">
             <video class="hero__video-background--bg" autoplay muted loop playsinline>
@@ -72,10 +73,10 @@
             </video>
         </div>
         <div class="hero__content container">
-            <h1 class="hero__title" id="hero__title">
+            <h1 class="hero__title h1" id="hero__title">
                 <span class="hero__title--row">
                     <span class="hero__title--part">W1DO</span>
-                    <div class="hero__title--logo-container">
+                    <div class="hero__title--logo-container hidden-mobile">
                         <img src="./assets/icons/circle-logo.svg" alt="Логотип" class="hero__title--logo" width="160"
                     height="160">
                     <img src="./assets/icons/hero-arrow-logo.svg" alt="" 
@@ -201,12 +202,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="hero__card--card-3">
+                <div class="hero__card--card-3 hidden-mobile">
                     <h2 class="hero__card--card-3__title h2">
                         Tech Lead CTO
                     </h2>
                     <p class="hero__card--card-3__description">Разработчик <br> стартапов</p>
-                    <div class="hero__card--card-3__container">
+                    <div class="hero__card--card-3__container ">
                         <img src="./assets/images/elipse 2.png" alt="" class="hero__card--card-3__img-back">
                         <img src="./assets/images/Vector 4.png" alt="" class="hero__card--card-3__img-middle">
                         <img src="./assets/images/photo-hero.png" alt="Разработчик"
@@ -278,7 +279,7 @@
         </div>
     </section>
 
-    <section class="section" aria-labelledby="task-title">
+    <section class="section section__task container" aria-labelledby="task-title">
         <div class="section__subtitle">
             <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
             <p class="section__subtitle--text">КАТЕГОРИИ УСЛУГ</p>
@@ -286,7 +287,7 @@
         <h2 class="section__title h2" id="task-title">ЛЮБОЙ ФОРМАТ <span class="section__title--accent">САЙТА</span> С
             УЧЁТОМ <br> ЗАДАЧ И АУДИТОРИИ</h2>
 
-        <div class="task container overflow">
+        <div class="task overflow">
 
             <ul class="task__list grid grid--template-3">
                 <li class="task__item">
@@ -396,7 +397,8 @@
             </div>
         </div>
     </section>
-
+    
+    <div class="stages--wrapper container">
     <section class="section" aria-labelledby="stages-title">
         <div class="section__subtitle">
             <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
@@ -406,7 +408,7 @@
                 class="section__title--accent">ИДЕИ ДО ЗАПУСКА</span>
         </h2>
 
-        <div class="stages grid grid--template-3 container ">
+        <div class="stages grid grid--template-3 ">
             <div class="stages__cols-1">
                 <div class="stages__cols-1--row">
                     <div class="stages__cols-1--row__title">
@@ -582,7 +584,8 @@
             </div>
         </div>
     </section>
-
+    </div>
+    
     <section class="section" aria-labelledby="possibilities-title">
         <div class="section__subtitle">
             <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
@@ -772,7 +775,7 @@
         </div>
     </section>
 
-    <section class="section" aria-labelledby="development-title">
+    <section class="section container" aria-labelledby="development-title">
         <div class="section section__alt--container container">
             <div class="section section__alt--title">
                 <div class="section__subtitle--alt">
@@ -786,7 +789,7 @@
             <div class="section__alt--description">Даже если вы начинаете с нуля, мы обеспечим <br> полный и
                 качественный цикл реализации <br> проекта.</div>
         </div>
-        <div class="development container">
+        <div class="development">
             <div class="development__scroll">
                 <div class="development__scroll--arrow-buttons">
                     <button class="task__arrow-buttons--button button button--arrow-button-grey-dark" type="button"
@@ -877,7 +880,7 @@
 
     </section>
 
-    <section class="section" aria-labelledby="price-title">
+    <section class="section container" aria-labelledby="price-title">
         <div class="section__subtitle">
             <img src="./assets/icons/star-orange.svg" alt="star" class="section__subtitle--icon" width="16">
             <p class="section__subtitle--text">ПРАЙС</p>
@@ -895,7 +898,7 @@
                 aria-label="Кнопка">Обслуживание</button>
         </div>
 
-        <div class="price grid grid--template-3 container">
+        <div class="price grid grid--template-3">
             <div class="price__card">
                 <div class="price__card--container">
                     <h3 class="price__card--title h3">Лендинг</h3>
@@ -1251,12 +1254,14 @@
                     aria-label="Кнопка">Интеграция и аналитика</button>
             </div>
             <div class="launch__cards grid grid--template-2">
-                <div class="launch__cards--card-1">
+                <div class="launch__cards--card-1 hidden-mobile">
+                    <div class="launch__cards--card-1__images">
                     <img src="./assets/icons/launch-section/star-grey.svg" alt=""
                         class="launch__cards--card-1__img-back">
                     <img src="./assets/icons/launch-section/Ellipse 1.png" alt=""
                         class="launch__cards--card-1__img-middle">
                     <img src="./assets/images/older-man-launch.png" alt="" class="launch__cards--card-1__img-front">
+                    </div>
                 </div>
 
                 <div class="launch__cards--card-2">
@@ -1323,6 +1328,7 @@
             </div>
 
             <div class="tools__cards">
+                <div class="tools__cards--wrapper">
                 <ul class="tools__cards--list">
                     <li class="tools__cards--item">
                         <img class="tools__cards--img" src="./assets/icons/toosl-section/html.svg" alt="">
@@ -1361,6 +1367,8 @@
                         <span class="tools__cards--description">Pinecone</span>
                     </li>
                 </ul>
+                </div>
+                <div class="tools__cards--wrapper">
                 <ul class="tools__cards--list">
                     <li class="tools__cards--item">
                         <img class="tools__cards--img" src="./assets/icons/toosl-section/mongo.svg" alt="">
@@ -1399,6 +1407,7 @@
                         <span class="tools__cards--description">Livewire</span>
                     </li>
                 </ul>
+                </div>
             </div>
 
         </div>
@@ -1477,7 +1486,7 @@
         </div>
     </section> 
 
-    <section class="section" aria-labelledby="reviews-title">
+    <section class="section container" aria-labelledby="reviews-title">
         <div class="section section__alt--container container">
             <div class="section section__alt--title">
                 <div class="section__subtitle--alt">
@@ -1494,10 +1503,10 @@
                 превзошёл ожидания.</div>
         </div> 
 
-        <div class="reviews container">
-
+        <div class="reviews">
+            <div class="reviews__gradient">
             <div class="reviews__wrapper">
-                <ul class="reviews__list reviews__list--full">
+                <ul class="reviews__list">
                     <li class="reviews__list--item">
                         <div class="reviews__list--item__text">
                             <p>
@@ -1583,8 +1592,9 @@
                         </div>
                     </li>
                 </ul>
-
-                <ul class="reviews__list reviews__list--half">
+            </div>
+            <div class="reviews__wrapper">
+                <ul class="reviews__list">
                     <li class="reviews__list--item">
                         <div class="reviews__list--item__text">
                             <p>
@@ -1699,7 +1709,7 @@
                     </li>
                 </ul>
             </div>
-
+            </div>
 
             <div class="reviews__buttons">
                 <h3 class="reviews__buttons--title h4">Опыт в разных сферах</h3>
@@ -1732,7 +1742,7 @@
         </div>
     </section> 
 
-    <section class="section" aria-labelledby="questions-title">
+    <section class="section container" aria-labelledby="questions-title">
         <div class="section section__alt--container container">
             <div class="section section__alt--title">
                 <div class="section__subtitle--alt">
@@ -1747,7 +1757,7 @@
             <div class="section__alt--description"></div>
         </div>
 
-        <div class="questions container">
+        <div class="questions">
             <div class="questions__accordion">
                 <ul class="questions__accordion--list">
                     <li class="questions__accordion--item">
@@ -1840,6 +1850,142 @@
 
 
     </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__body">
+                <nav class="footer__menu">
+                    <div class="footer__menu-column">
+                        <a href="/" class="footer__menu-main-link h6">Продвижение сайтов</a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    Продвижение сайта в Google
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    Performance marketing
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    SEO-аудит
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer__menu-column">
+                        <a href="/" class="footer__menu-main-link h6">Создание сайтов</a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link--alt">
+                                    Разработка Landing Page
+                                    <span class="alt">(Одностраничный сайт)</span> 
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    Разработка корпоративного сайта
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    Разработка интернет-магазина
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    Поддержка сайта
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-column">
+                        <a href="/" class="footer__menu-main-link h6">Контекстная реклама</a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    Настройка Яндекс.Директ
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    Ведение Яндекс.Директ
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    Добавить идею
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer__menu-column">
+                        <a href="/" class="footer__menu-main-link h6">О компании</a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    Кейсы
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    Блог
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="/" class="footer__menu-link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </nav>
+
+            </div>
+            <div class="footer__extra">
+                <div class="footer__extra-menu">
+                    <ul class="footer__extra-menu-list">
+                        <li class="footer__extra-menu-item">
+                            <a href="/" class="footer__extra-menu-link">
+                                <img src="./assets/icons/Logo.svg" alt="" class="footer__extra-logo" width="151" height="40">
+                            </a>
+                        </li>
+                        <li class="footer__extra-menu-item">
+                            <a href="/" class="footer__extra-menu-link--button button button-transparent"> Заказать звонок
+                                <svg viewBox="0 0 33.9411 33.9412" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.941116" height="33.941162" fill="none">
+	<path id="Vector" d="M0 0L21.5625 0" stroke="rgb(255,255,255)"  stroke-linecap="round" stroke-linejoin="round" stroke-width="3" transform="matrix(0.707107,-0.707107,0.707107,0.707107,9.34715,24.5941)" />
+	<path id="Vector" d="M0 20.125L10.0625 10.0625L0 0" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" transform="matrix(0.707107,-0.707107,0.707107,0.707107,10.3635,9.34705)" />
+</svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <p class="footer__copyright">@W1DO_DIGITAL <span class="copyright--alt">Пн - Вт: с 10:00 до 18:00</span> </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

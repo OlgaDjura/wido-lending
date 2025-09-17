@@ -48,11 +48,6 @@
         flex-direction: column;
         align-items: center;
 
-        @include mobile-s {
-            font-size: fluid(70, 50);
-            
-        }
-
         &--row {
             display: flex;
 
@@ -88,9 +83,11 @@
         grid-template-columns: 1fr rem(540) 1fr;
         align-items: stretch;
         gap: rem(20);
+        
 
         @include laptop {
             grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
 
         }
 
@@ -104,10 +101,12 @@
 
         &--card-1, &--card-3, &--card-2__mini {
             border-radius: rem(32);
-            box-shadow: inset 0px 0px 28px 0px rgba(0, 0, 0, 1);
+            box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),   /* тень внутрь */
+                        inset -4px -4px 8px rgba(250, 250, 250, 0.05); /* свет сверху */
             padding-bottom: fluid(28, 24);
             padding-top: rem(16);
             padding-inline: fluid(28, 24);
+            background: rgba(255, 255, 255, 0.05);
         }
 
         &--card-1, &--card-3, &--card-2 {
@@ -119,14 +118,15 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            gap: rem(5);
 
             &__button-1 {
                 @include flex-center;
                 border: none;
                 border-radius: rem(50);
                 background-color: rgba(231, 231, 231, 1);
-                width: fluid(70, 50);
-                height: fluid(70, 50);
+                width: fluid(70, 30);
+                height: fluid(70, 30);
 
                 
             }
@@ -243,49 +243,31 @@
             &__img-front {
                 position: absolute;
                 bottom: 0;
-                
-                //height: fluid(450, 400);
+                height: 80%;
             }
 
             &__img-back   {
                 left: 0;
                 width: 100%;
                 bottom: -80px;
-                height: auto;
+                //height: 100%;
                 
                 z-index: 1; 
-
-                @include mobile {
-                    height: rem(500);
-                }
-                @include mobile-s {
-                    height: rem(400);
-                }
             }
             &__img-middle { 
-                bottom: -130px;
-                right: -150px;
-                width: 100%;
+                bottom: -85px;
+                right: -95px;
+                width: 90%;
                 z-index: 2; 
-                @include mobile {
-                    height: rem(500);
-                }
-                @include mobile-s {
-                    height: rem(400);
-                }
+                transform: translate(-3%, 3%);
+                
             }
             &__img-front  {
-                right: -50px;
-                bottom: -90px;
-                z-index: 3; 
-
-                @include mobile {
-                    height: rem(500);
-                }
-
-                @include mobile-s {
-                    height: rem(400);
-                }
+                right: -2px;
+                bottom: -1px;
+                z-index: 3;
+                transform: translate(-0%, -0%);
+                flex-shrink: 0;
             }
         }
 
@@ -296,6 +278,7 @@
         &--footer-list {
             display: flex;
             justify-content: space-between;
+            gap: rem(5);
             background-color: var(--color-accent);
             padding-block: rem(20);
             padding-inline: rem(30);

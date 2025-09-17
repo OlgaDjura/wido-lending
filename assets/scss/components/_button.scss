@@ -14,12 +14,21 @@
         color: var(--color-light);
         @include flex-center;
 
+        @include hover {
+            background-color: var(--transparent);
+            border: var(--border);
+        }
+
     }
 
     &--dark {
         background-color: var(--color-dark);
         border: none;
         color: var(--color-light);
+
+        @include hover {
+            background-color: var(--color-grey);
+        }
     }
 
     &--transparent {
@@ -28,6 +37,10 @@
         border: var(--border);
         color: var(--color-light);
         @include flex-center;
+
+        @include hover {
+            background-color: var(--color-grey-dark);
+        }
 
     }
 
@@ -42,7 +55,10 @@
             height: fluid(24, 20);
         }
 
-        
+        @include hover {
+            background-color: var(--color-accent);
+            border: var(--border);
+        }
     }
 
     &--arrow-button-grey-dark {
@@ -56,6 +72,11 @@
             height: fluid(18, 15);
         }
 
+        @include hover {
+            background-color: var(--color-grey);
+            border: var(--border);
+        }
+
     }
 
     &--arrow-button-grey {
@@ -67,6 +88,11 @@
         & svg {
             width: fluid(18, 15);
             height: fluid(18, 15);
+        }
+
+        @include hover {
+            background-color: var(--color-grey-dark);
+            border: var(--border);
         }
     }
 

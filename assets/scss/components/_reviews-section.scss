@@ -1,34 +1,23 @@
 @use '../helpers' as *;
-
+$width-item: rem(600);
 .reviews {
     margin-top: fluid(80, 40);
-    &__wrapper {
+    
+
+    &__gradient {
+        position: relative;
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: rem(20);
-        position: relative; /* чтобы градиенты позиционировались относительно контейнера */
-        overflow-x: auto;
-        //padding: 0 50px;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-         /* скрываем полосу скролла */
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* IE/Edge */
-
-        &::-webkit-scrollbar {
-            display: none; /* Chrome, Safari */
-        }
-
-  /* псевдоэлементы для градиентов */
+    flex-direction: column;
+    gap: rem(20);
+      /* псевдоэлементы градиента */
         &::before,
         &::after {
             content: "";
             position: absolute;
             top: 0;
-            width: 50px; /* ширина градиента */
+            width: 40%; /* ширина градиента */
             height: 100%;
-            pointer-events: none; /* чтобы скролл работал, не перекрывался */
+            pointer-events: none;
             z-index: 5; /* поверх карточек */
         }
 
@@ -43,17 +32,45 @@
         }
     }
 
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-x: auto;
+        //padding: 0 50px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+
+        &::-webkit-scrollbar {
+            display: none; /* Chrome, Safari */
+        }
+
+    }
+
     &__list {
         display: flex;
         gap: rem(20);
+        width: max-content;
+        padding: 0 rem(40);
         
     
 
         &--item {
             background-color: var(--color-dark);
             border-radius: rem(32);
-            width: 600px;
-            flex-shrink: 0;
+            max-width: $width-item;
+            flex-shrink: 0 0 $width-item;
+
+            @include hover {
+                transform: scale(1.05); // слегка увеличиваем карточку
+                box-shadow: inset 4px 4px 12px rgba(0,0,0,0.6),
+                inset -4px -4px 12px rgba(250,250,250,0.05);
+            }
+
+            @include mobile-s {
+                max-width: rem(300);
+            }
             
 
             &__text {
@@ -81,8 +98,9 @@
         margin-bottom: fluid(180, 50);
         &--title {
             position: absolute;
-            top: -10%;
-            left: 35%;
+            top: -5%;
+            left: 50%; 
+            transform: translate(-50%, -50%);
             padding-inline: fluid(60, 30) ;
             background-color: var(--color-black);
         }
@@ -99,6 +117,8 @@
         &--button {
             padding-block: fluid(24, 15);
             padding-inline: fluid(50, 25);
+            box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6),   /* тень внутрь */
+                        inset -4px -4px 8px rgba(250, 250, 250, 0.05); /* свет сверху */
         }
     }
 
@@ -139,14 +159,6 @@
     }
 }
 
-.reviews__list--full {
-    justify-content: center;
-    overflow: visible;
-
-}
-
-.reviews__list--half {
-    flex-wrap: nowrap;
-    scroll-snap-align: start;
-
+.reviews__wrapper:nth-of-type(2) .reviews__list {
+    margin-left: calc(#{$width-item} / 2 * -1) ;
 }
