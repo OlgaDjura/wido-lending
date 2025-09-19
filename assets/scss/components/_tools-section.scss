@@ -48,6 +48,7 @@ $card-width: rem(200);
 
         &--item {
             @include flex-center;
+            flex-direction: column;
             width: $card-width;
             height: fluid(200, 150);
             padding: fluid(24, 15) fluid(50, 30);
