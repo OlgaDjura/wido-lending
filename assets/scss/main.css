@@ -1567,7 +1567,7 @@ a::before, button::before {
   margin-top: clamp(6.25rem, 4.9754901961rem + 5.2287581699vw, 11.25rem);
   padding: 1.75rem;
   width: 100%;
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%), url(../assets/images/form-backgraund-copy.jpg);
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%), url(form-backgraund-copy.jpg);
   background-size: cover; /* картинка растягивается на весь контейнер */
   background-position: center; /* центрирует картинку */
   background-repeat: no-repeat; /* чтобы не повторялась */
