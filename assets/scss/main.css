@@ -1567,10 +1567,12 @@ a::before, button::before {
   margin-top: clamp(6.25rem, 4.9754901961rem + 5.2287581699vw, 11.25rem);
   padding: 1.75rem;
   width: 100%;
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%), url(assets/images/form-backgraund-copy.jpg);
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 100%), url(./assets/images/form-backgraund-copy.jpg);
   background-size: cover; /* картинка растягивается на весь контейнер */
   background-position: center; /* центрирует картинку */
   background-repeat: no-repeat; /* чтобы не повторялась */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius);
 }
 .development__form--button {
   margin: 0 auto;
@@ -2172,10 +2174,12 @@ a::before, button::before {
   flex-direction: column;
   padding-block: clamp(3.125rem, 2.3284313725rem + 3.2679738562vw, 6.25rem);
   width: 100%;
-  background: radial-gradient(ellipse at center, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(assets/images/oringe.jpg);
+  background: radial-gradient(ellipse at center, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(./assets/images/oringe.jpg);
   background-size: cover; /* картинка растягивается на весь контейнер */
   background-position: center; /* центрирует картинку */
   background-repeat: no-repeat; /* чтобы не повторялась */
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .reviews__form--title {
   text-align: center;

@@ -127,10 +127,12 @@ $width-item: rem(600);
         flex-direction: column;
         padding-block: fluid(100, 50);
         width: 100%;
-        background:radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100% ), url(assets/images/oringe.jpg) ;
+        background:radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100% ), url(./assets/images/oringe.jpg) ;
         background-size: cover;       /* картинка растягивается на весь контейнер */
         background-position: center;  /* центрирует картинку */
         background-repeat: no-repeat; /* чтобы не повторялась */
+        border-radius: var(--border-radius);
+        border: 1px solid rgba(255, 255, 255, 0.2);
 
         &--title {
             text-align: center;
