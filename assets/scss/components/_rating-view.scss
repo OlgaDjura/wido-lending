@@ -15,10 +15,10 @@
         --size: #{rem(20)};
 
         @include square(var(--size));
-        background: url(/assets/icons/reviews-section/reviews-srar-grey.svg) center/contain no-repeat;
+        background: url('/wido-lending/assets/icons/reviews-section/reviews-srar-grey.svg') center/contain no-repeat;
 
         &.is-active {
-            background-image: url(/assets/icons/reviews-section/reviews-star-oring.svg) ;
+            background-image: url('/wido-lending/assets/icons/reviews-section/reviews-star-oring.svg') ;
         }
 
         @include laptop {
