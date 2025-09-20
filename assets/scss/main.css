@@ -2220,10 +2220,11 @@ a::before, button::before {
   --size: 1.25rem;
   width: var(--size);
   height: var(--size);
-  background: url(/assets/icons/reviews-section/reviews-srar-grey.svg) center/contain no-repeat;
+  background: url("/wido-lending/assets/icons/reviews-section/reviews-srar-grey.svg") no-repeat center;
+  background-size: contain;
 }
 .rating-view__star.is-active {
-  background-image: url(/assets/icons/reviews-section/reviews-star-oring.svg);
+  background-image: url("/wido-lending/assets/icons/reviews-section/reviews-star-oring.svg");
 }
 @media (width <= 90.06125rem) {
   .rating-view__star {
