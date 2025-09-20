@@ -15,7 +15,8 @@
         --size: #{rem(20)};
 
         @include square(var(--size));
-        background: url('/wido-lending/assets/icons/reviews-section/reviews-srar-grey.svg') center/contain no-repeat;
+        background: url('/wido-lending/assets/icons/reviews-section/reviews-srar-grey.svg') no-repeat center;
+        background-size: contain;
 
         &.is-active {
             background-image: url('/wido-lending/assets/icons/reviews-section/reviews-star-oring.svg') ;
