@@ -2,7 +2,7 @@
 .grid {
     display: grid;
     grid-auto-columns: 1fr;
-    align-items: stretch;
+    //align-items: stretch;
 
     &--template-2 {
         grid-template-columns: repeat(2, 1fr);
@@ -13,7 +13,7 @@
         @include mobile {
             max-width: rem(500);
             grid-template-columns: 1fr;
-            justify-content: center;
+            justify-content: center !important;
         }
     }
 

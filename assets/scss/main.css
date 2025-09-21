@@ -315,7 +315,6 @@ a::before, button::before {
 .grid {
   display: grid;
   grid-auto-columns: 1fr;
-  align-items: stretch;
 }
 .grid--template-2 {
   grid-template-columns: repeat(2, 1fr);
@@ -325,7 +324,7 @@ a::before, button::before {
   .grid--template-2 {
     max-width: 31.25rem;
     grid-template-columns: 1fr;
-    justify-content: center;
+    justify-content: center !important;
   }
 }
 .grid--template-3 {
@@ -1585,7 +1584,8 @@ a::before, button::before {
 }
 @media (width <= 47.99875rem) {
   .development__form {
-    max-width: 18.75rem;
+    width: 100%;
+    max-width: 21.875rem;
   }
 }
 .development__form--button {
