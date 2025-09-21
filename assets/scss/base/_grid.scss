@@ -6,7 +6,7 @@
 
     &--template-2 {
         grid-template-columns: repeat(2, 1fr);
-        gap: rem(20);
+        gap: fluid(20, 10);
 
         
 

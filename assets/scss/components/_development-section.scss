@@ -51,7 +51,7 @@
 
     &__form {
         margin-top: fluid(180, 100);
-        padding: rem(28);
+        padding: fluid(28, 10);
         width: 100%;
         background: linear-gradient(270deg, rgba(0,0,0,0), rgba(0,0,0,1)),
             url('/wido-lending/assets/images/form-backgraund-copy.jpg');
@@ -60,6 +60,14 @@
         background-repeat: no-repeat; /* чтобы не повторялась */
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: var(--border-radius);
+
+        @include mobile {
+            max-width: rem(500);
+        }
+
+        @include mobile-s {
+            max-width: rem(300);
+        }
         &--button {
             margin: 0 auto;
             width: fluid(282, 180);
@@ -74,11 +82,18 @@
             flex-direction: column;
             column-gap: fluid(24, 10);
             justify-content: center;
+
+            @include mobile {
+                box-sizing: border-box;
+                padding: rem(10);
+                
+            }
         }
         &--container-2 {
+            box-sizing: border-box;
             border-radius: var(--border-radius);
             border: 1px solid rgba(78, 34, 7, 1);
-            padding: fluid(40, 20);
+            padding: fluid(40, 10);
         }
 
         &--title-2 {

@@ -1,6 +1,12 @@
 @use '../helpers' as *;
 
 .task {
+    &__list {
+        @include mobile-s {
+        padding-inline: rem(10);
+        }
+    }
+
     &__item {
         position: relative;
         border-radius: rem(32);

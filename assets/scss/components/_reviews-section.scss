@@ -96,6 +96,7 @@ $width-item: rem(600);
         position: relative;
         margin-top: fluid(80, 40);
         margin-bottom: fluid(180, 50);
+
         &--title {
             position: absolute;
             top: -5%;
@@ -111,6 +112,10 @@ $width-item: rem(600);
         justify-content: space-around;
         flex-wrap: wrap;
         padding-top: fluid(80, 40);
+
+        @include mobile {
+            gap: rem(10);
+        }
 
         
 

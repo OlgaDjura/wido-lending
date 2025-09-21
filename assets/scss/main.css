@@ -217,7 +217,7 @@ html.is-lock {
 }
 
 body {
-  font-size: clamp(0.9375rem, 0.7941176471rem + 0.5882352941vw, 1.5rem);
+  font-size: clamp(0.8125rem, 0.637254902rem + 0.7189542484vw, 1.5rem);
   display: flex;
   flex-direction: column;
   font-family: var(--font-family-base);
@@ -319,7 +319,7 @@ a::before, button::before {
 }
 .grid--template-2 {
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  gap: clamp(0.625rem, 0.4656862745rem + 0.6535947712vw, 1.25rem);
 }
 @media (width <= 47.99875rem) {
   .grid--template-2 {
@@ -970,7 +970,6 @@ a::before, button::before {
   .hero__card {
     grid-template-columns: repeat(1, 1fr);
     max-width: 31.25rem;
-    margin-inline: 5rem;
   }
 }
 .hero__card--card-1, .hero__card--card-3, .hero__card--card-2__mini {
@@ -1203,6 +1202,11 @@ a::before, button::before {
   padding-top: clamp(3.125rem, 1.5318627451rem + 6.5359477124vw, 9.375rem);
 }
 
+@media (width <= 47.99875rem) {
+  .task__list {
+    padding-inline: 0.625rem;
+  }
+}
 .task__item {
   position: relative;
   border-radius: 2rem;
@@ -1293,7 +1297,7 @@ a::before, button::before {
   display: flex;
   flex-direction: column;
   gap: clamp(1.875rem, 1.7156862745rem + 0.6535947712vw, 2.5rem);
-  padding: clamp(2.5rem, 1.862745098rem + 2.614379085vw, 5rem);
+  padding: clamp(0.625rem, -0.4901960784rem + 4.5751633987vw, 5rem);
   background-color: transparent;
   border-block: clamp(1.25rem, 1.0588235294rem + 0.7843137255vw, 2rem);
 }
@@ -1565,7 +1569,7 @@ a::before, button::before {
 }
 .development__form {
   margin-top: clamp(6.25rem, 4.9754901961rem + 5.2287581699vw, 11.25rem);
-  padding: 1.75rem;
+  padding: clamp(0.625rem, 0.3382352941rem + 1.1764705882vw, 1.75rem);
   width: 100%;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("/wido-lending/assets/images/form-backgraund-copy.jpg");
   background-size: cover; /* картинка растягивается на весь контейнер */
@@ -1573,6 +1577,16 @@ a::before, button::before {
   background-repeat: no-repeat; /* чтобы не повторялась */
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--border-radius);
+}
+@media (width <= 47.99875rem) {
+  .development__form {
+    max-width: 31.25rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .development__form {
+    max-width: 18.75rem;
+  }
 }
 .development__form--button {
   margin: 0 auto;
@@ -1588,10 +1602,17 @@ a::before, button::before {
   column-gap: clamp(0.625rem, 0.4019607843rem + 0.9150326797vw, 1.5rem);
   justify-content: center;
 }
+@media (width <= 47.99875rem) {
+  .development__form--container {
+    box-sizing: border-box;
+    padding: 0.625rem;
+  }
+}
 .development__form--container-2 {
+  box-sizing: border-box;
   border-radius: var(--border-radius);
   border: 1px solid rgb(78, 34, 7);
-  padding: clamp(1.25rem, 0.931372549rem + 1.3071895425vw, 2.5rem);
+  padding: clamp(0.625rem, 0.1470588235rem + 1.9607843137vw, 2.5rem);
 }
 .development__form--title-2 {
   font-size: clamp(1.25rem, 1.0588235294rem + 0.7843137255vw, 2rem);
@@ -2161,6 +2182,11 @@ a::before, button::before {
   justify-content: space-around;
   flex-wrap: wrap;
   padding-top: clamp(2.5rem, 1.862745098rem + 2.614379085vw, 5rem);
+}
+@media (width <= 47.99875rem) {
+  .reviews__buttons-group {
+    gap: 0.625rem;
+  }
 }
 .reviews__buttons-group--button {
   padding-block: clamp(0.9375rem, 0.7941176471rem + 0.5882352941vw, 1.5rem);
